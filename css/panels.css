@@ -110,13 +110,18 @@ ul.list-group.horizontal.auto a {
 	-ms-flex: 1 0 auto; /* IE 10 */
 }
 
-ul.list-group.horizontal li.list-item:first-child {
+ul.list-group.horizontal li.list-item:first-child:not(:last-child) {
 	border-radius: 3px 0px 0px 3px;
 }
 
-ul.list-group.horizontal li.list-item:last-child {
+ul.list-group.horizontal li.list-item:last-child:not(:first-child) {
 	border-radius: 0px 3px 3px 0px;
 	border-right-width: 1px;
+}
+
+ul.list-group.horizontal li.list-item:last-child:first-child {
+	border-radius: 3px;
+	border-width: 1px;
 }
 
 /* Colors */
