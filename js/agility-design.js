@@ -11,20 +11,17 @@ $(document).ready(function() {
     $(".closable button[action='alert-close'].close").click( closableReact );
     $(".closable button[action='callout-close'].close").click( closableReact );
 
+    // Animations
+    $("div[class *= 'animate-fade']").css( "opacity", 1 );
+    $("div[class *= 'animate-fade-from-left']").css(   "right",  0 );
+    $("div[class *= 'animate-fade-from-top']").css(    "bottom", 0 );
+    $("div[class *= 'animate-fade-from-right']").css(  "left",   0 );
+    $("div[class *= 'animate-fade-from-bottom']").css( "top",    0 );
+
     // Animation groups
     $("div.animation-group").children().each((i, v) => {
         // Only accept elements with a .animate-* class.
         if(~$(v).attr("class").indexOf("animate-")) {
-            
-            if(~$(v).attr("class").indexOf("animate-fade")) {
-                $(v).css( "opacity", 1 );
-            }
-
-            if(~$(v).attr("class").indexOf("animate-fade-from-left")) { $(v).css( "right", "0em" ); }
-            else if(~$(v).attr("class").indexOf("animate-fade-from-right"))  { $(v).css( "left",    "0em" ); }
-            else if(~$(v).attr("class").indexOf("animate-fade-from-top"))    { $(v).css( "bottom",  "0em" ); }
-            else if(~$(v).attr("class").indexOf("animate-fade-from-bottom")) { $(v).css( "top",     "0em" ); }
-            
             $(v).css({
                 "transition-delay":
                 ( parseFloat( $(v).parent().attr("data-delay-initial") )
