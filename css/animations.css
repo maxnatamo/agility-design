@@ -61,7 +61,7 @@
 [class *= "animate-fade-from-"] {
     position: relative;
     opacity: 0;
-    transition: all 0.5s;
+    transition: opacity 0.5s, right 0.5s, bottom 0.5s, left, 0.5s, top 0.5s;
 }
 
 .animate-fade-from-left   { right:  4em; }
