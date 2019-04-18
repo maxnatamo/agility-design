@@ -3,7 +3,7 @@ Agility Design is a mobile-first HTML, CSS, and JavaScript framework to create t
 
 ## Getting Started
 
-To start using AD, simply link the `.css`-file to your `.html`-file.
+To start using Agility Design, simply link the `.css`-file to your `.html`-file.
 
 ```
 <link rel="stylesheet" href="https://raw.githubusercontent.com/madstk1/agility-design/master/css/simplicity-design.min.css">
@@ -17,11 +17,11 @@ To add a skin, link the skin-in-questions's `.css`-file to your `.html`-file, as
 
 ## Building
 
-It is also possbile to build your own version of AD, if you so desire.
+It is also possbile to build your own version of Agility Design, if you so desire.
 
 ### Prerequisites
 
-To build AD, you have to have `Less` and `Clean-CSS` installed via `npm`. If not already installed, run the following command:
+To build Agility Design, you have to have `Less` and `Clean-CSS` installed via `npm`. If not already installed, run the following command:
 
 ```
 # npm install -g less less-plugin-clean-css
