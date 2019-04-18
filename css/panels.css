@@ -103,7 +103,8 @@ ul.list-group.horizontal li.list-item {
 	border-right-width: 0px;
 }
 
-ul.list-group.horizontal.auto li.list-item {
+ul.list-group.horizontal.auto li.list-item,
+ul.list-group.horizontal.auto a {
 	flex: 1 0 auto;
 	-webkit-flex: 1 0 auto; /* Safari */
 	-ms-flex: 1 0 auto; /* IE 10 */
