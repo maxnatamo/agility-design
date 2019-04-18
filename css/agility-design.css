@@ -17,9 +17,6 @@
  * along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
 */
 
-/* Skin Selection * /
-@import "skins/default.css"; /**/
-
 /* CSS Modules */
 @import "grid.css";
 @import "misc.css";
