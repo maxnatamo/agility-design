@@ -43,9 +43,9 @@
 }
 
 @keyframes gradient {
-    0%   { background-position: 100% 0%; }
-    50%  { background-position: 0% 100%; }
-    100% { background-position: 100% 0%; }
+    0%   { background-position: 100% 0%;   }
+    50%  { background-position: 0%   100%; }
+    100% { background-position: 100% 0%;   }
 }
 
 /*
@@ -57,6 +57,17 @@
 .fade {
     transition: opacity 0.15s linear;
 }
+
+[class *= "animate-fade-from-"] {
+    position: relative;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animate-fade-from-left   { right:  4em; }
+.animate-fade-from-top    { bottom: 4em; }
+.animate-fade-from-right  { left:   4em; }
+.animate-fade-from-bottom { top:    4em; }
 
 /* Gradients */
 
