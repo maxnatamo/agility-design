@@ -1,0 +1,70 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Mobile-only classes */
+
+@media (min-width: 577px) {
+	.mobile-only-small {
+		display: none;
+	}
+}
+
+@media (min-width: 767px) {
+	.mobile-only-medium {
+		display: none;
+	}
+}
+
+@media (min-width: 993px) {
+	.mobile-only-large {
+		display: none;
+	}
+}
+
+@media (min-width: 1199px) {
+	.mobile-only-mega {
+		display: none;
+	}
+}
+
+/* Desktop-only classes */
+
+@media (max-width: 576px) {
+	.desktop-only-small {
+		display: none;
+	}
+}
+
+@media (max-width: 766px) {
+	.desktop-only-medium {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.desktop-only-large {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.desktop-only-mega {
+		display: none;
+	}
+}

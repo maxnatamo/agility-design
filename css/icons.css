@@ -1,0 +1,91 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.fas {
+    padding-right: 0.25em;
+    vertical-align: -5%;
+}
+
+[class ^= "icon-"] {
+    padding: 0 0.25em 0 0.25em !important;
+}
+
+/*
+    Arrows
+ */
+
+.icon-left-arrow::after    { content: "\2190" }
+.icon-up-arrow::after    { content: "\2191" }
+.icon-right-arrow::after    { content: "\2192" }
+.icon-down-arrow::after    { content: "\2193" }
+.icon-left-right-arrow::after    { content: "\2194" }
+.icon-up-down-arrow::after    { content: "\2195" }
+.icon-north-west-arrow::after    { content: "\2196" }
+.icon-north-east-arrow::after    { content: "\2197" }
+.icon-south-east-arrow::after    { content: "\2198" }
+.icon-south-west-arrow::after    { content: "\2199" }
+.icon-anticlockwise-repeat-arrow::after    { content: "\21ba" }
+.icon-clockwise-repeat-arrow::after    { content: "\21bb" }
+.icon-left-double-arrow::after    { content: "\21d0" }
+.icon-up-double-arrow::after    { content: "\21d1" }
+.icon-right-double-arrow::after    { content: "\21d2" }
+.icon-down-double-arrow::after    { content: "\21d3" }
+.icon-left-right-double-arrow::after    { content: "\21d4" }
+.icon-up-down-double-arrow::after    { content: "\21d5" }
+.icon-north-west-double-arrow::after    { content: "\21d6" }
+.icon-north-east-double-arrow::after    { content: "\21d7" }
+.icon-south-east-double-arrow::after    { content: "\21d8" }
+.icon-south-west-double-arrow::after    { content: "\21d9" }
+
+/*
+    Math
+ */
+
+.icon-plus::after    { content: "\002b" }
+.icon-minus::after    { content: "\2212" }
+.icon-multiplication::after    { content: "\00d7" }
+.icon-division::after    { content: "\00f7" }
+.icon-equals::after    { content: "\003d" }
+.icon-not-equals::after    { content: "\2260" }
+.icon-plus-minus::after    { content: "\00b1" }
+.icon-not-sign::after    { content: "\00ac" }
+.icon-less::after    { content: "\003c" }
+.icon-greater::after    { content: "\003d" }
+.icon-equal-or-less::after    { content: "\22dc" }
+.icon-equal-or-greater::after    { content: "\22dd" }
+.icon-degree::after    { content: "\00b0" }
+.icon-therefore::after    { content: "\2234" }
+.icon-because::after    { content: "\2235" }
+.icon-ratio::after    { content: "\2236" }
+.icon-proportion::after    { content: "\2237" }
+.icon-close-equal::after    { content: "\2245" }
+.icon-not-close-equal::after    { content: "\2246" }
+.icon-almost-equal::after    { content: "\2248" }
+.icon-not-almost-equal::after    { content: "\2249" }
+.icon-almost-or-equal::after    { content: "\224a" }
+.icon-not-almost-or-equal::after    { content: "\2247" }
+
+/*
+    Punctuation
+ */
+
+.icon-copyright::after    { content: "\00a9" }
+.icon-trademark::after    { content: "\00ae" }
+.icon-trade-mark::after    { content: "\2122" }
+.icon-paragraph::after    { content: "\00b6" }

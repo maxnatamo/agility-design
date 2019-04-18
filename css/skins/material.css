@@ -1,0 +1,107 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* CSS Imports */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+:root {
+    /*
+        Basics
+     */
+
+    --main-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --default-text-color: black;
+    --subtext-foreground: #3b3b3b;
+
+    /*
+        Titles and headings
+     */
+	--title-foreground: black;
+    --subtitle-foreground: #5c5c5c;
+    
+    --heading1-foreground: #3b3b3b;
+    --heading2-foreground: #414141;
+    --heading3-foreground: #505050;
+    --heading4-foreground: #5c5c5c;
+    --heading5-foreground: #666666;
+    --heading6-foreground: #747474;
+
+    /*
+        Backgrounds and panels
+     */
+
+    --default-page-background: white;
+    
+    --panel-default-background: #f2f2f2;
+    --panel-default-border: #b3b3b3;
+    --panel-header-foreground: #3e3e3e;
+    --panel-header-underline: gray;
+    --panel-body-foreground: #535353;
+
+    /*
+        Code formatting
+     */
+
+    --code-background-even: var(--panel-default-background);
+    --code-background-odd: #f0f0f0;
+    --code-border: #bcbcbc;
+
+    /*
+         Images
+     */
+
+    --image-comment-foreground: gray;
+
+    /*
+         Input
+     */
+
+   --unchecked-checkbox-background: #cacaca;
+   --checked-checkbox-background: #1da1f2;
+
+    /*
+         Colors
+     */
+   --colors-white: #f6f6f6;
+   --colors-black: #373b41;
+   --colors-red: #ef978b;
+   --colors-green: #95d1a9;
+   --colors-yellow: #f7ca88;
+   --colors-blue: #1da1f2;
+   --colors-magenta: #c9a0ca;
+   --colors-cyan: #71cecd;
+   
+   --colors-bright-white: #fcfcfc;
+   --colors-bright-black: #cdd1d6;
+   --colors-bright-red: #f5aca3;
+   --colors-bright-green: #b8e4c7;
+   --colors-bright-yellow: #f8dcb2;
+   --colors-bright-blue: #9acdec;
+   --colors-bright-magenta: #e7cde7;
+   --colors-bright-cyan: #a3e9e8;
+
+   --colors-dark-white: #747474;
+   --colors-dark-black: #111316;
+   --colors-dark-red: #b14f43;
+   --colors-dark-green: #4c9665;
+   --colors-dark-yellow: #966e32;
+   --colors-dark-blue: #216fa0;
+   --colors-dark-magenta: #79447a;
+   --colors-dark-cyan: #297271;
+}

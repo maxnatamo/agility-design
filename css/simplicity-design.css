@@ -1,0 +1,39 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Skin Selection * /
+@import "skins/default.css"; /**/
+
+/* CSS Modules */
+@import "grid.css";
+@import "misc.css";
+@import "fonts.css";
+@import "input.css";
+@import "icons.css";
+@import "colors.css";
+@import "panels.css";
+@import "images.css";
+@import "general.css";
+@import "buttons.css";
+@import "sliders.css";
+@import "platform.css";
+@import "placement.css";
+@import "navigation.css";
+@import "animations.css";
+@import "communication.css";

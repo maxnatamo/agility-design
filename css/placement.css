@@ -1,0 +1,99 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Containers */
+
+.title-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.container {
+    margin: 3em auto 3em auto;
+}
+
+.container-full {
+    width: 100%;
+    margin: 3em auto 3em auto;
+}
+
+@media (max-width:575px) {
+	.container {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media (min-width:575px) {
+	.container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media (min-width:766px) {
+	.container {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+}
+
+@media (min-width:992px) {
+	.container {
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+}
+
+@media (min-width:1200px) {
+	.container {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
+/* Floating */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+/* Centering */
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.center {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+span.text-center {
+    margin: auto;
+    display: table;
+}

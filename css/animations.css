@@ -1,0 +1,137 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+    Animation keyframes
+ */
+
+@keyframes loading-spin-static {
+    to  { transform: rotate(360deg); }
+}
+
+@keyframes loading-grow {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes gradient {
+    0%   { background-position: 100% 0%; }
+    50%  { background-position: 0% 100%; }
+    100% { background-position: 100% 0%; }
+}
+
+/*
+    Animation classes
+ */
+
+/* Fade */
+
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+/* Gradients */
+
+.gradient {
+    color: var(--colors-blue);
+    background: linear-gradient( 235deg, white, currentColor );
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient 30s ease infinite;
+    -moz-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
+}
+
+/* Loading Spin Static */
+
+.loading-spin-static {
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.25em solid black;
+    border-right-color: transparent;
+    border-radius: 50%;
+
+    animation: loading-spin-static 0.75s linear infinite;
+    -webkit-animation: loading-spin-static 0.75s linear infinite;
+}
+
+.loading-spin-static-small {
+    width: 1em;
+    height: 1em;
+    border-width: 0.2em;
+}
+
+.loading-spin-static-large {
+    width: 2em;
+    height: 2em;
+    border-width: 0.35em;
+}
+
+.loading-spin-static-white {
+    border-color: var(--colors-white);
+    border-right-color: transparent;
+}
+
+.loading-spin-static-black {
+    border-color: var(--colors-black);
+    border-right-color: transparent;
+}
+
+.loading-spin-static-red {
+    border-color: var(--colors-red);
+    border-right-color: transparent;
+}
+
+.loading-spin-static-green {
+    border-color: var(--colors-green);
+    border-right-color: transparent;
+}
+
+.loading-spin-static-yellow {
+    border-color: var(--colors-yellow);
+    border-right-color: transparent;
+}
+
+
+.loading-spin-static-blue {
+    border-color: var(--colors-blue);
+    border-right-color: transparent;
+}
+
+.loading-spin-static-magenta {
+    border-color: var(--colors-magenta);
+    border-right-color: transparent;
+}
+
+.loading-spin-static-cyan {
+    border-color: var(--colors-cyan);
+    border-right-color: transparent;
+}

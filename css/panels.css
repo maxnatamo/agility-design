@@ -1,0 +1,430 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+	Panels
+ */
+
+.panel {
+	padding: 0em 1em 1em;
+	border-radius: 6px;
+	border: 1px solid var(--panel-default-border);
+	background-color: var(--panel-default-background);
+}
+
+.panel-header {
+	color: var(--panel-header-foreground);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid var(--panel-header-underline);
+}
+
+.panel-body {
+	margin: 1em 1em;
+	color: var(--panel-body-foreground);
+}
+
+.panel-clear {
+	background-color: var(--panel-page-background);
+	border-width: 0px;
+}
+
+.panel-clear .panel-header {
+	width: 50%;
+}
+
+/*
+	List groups
+ */
+
+ul.list-group {
+	display: block;
+	width: 100%;
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+ul.list-group li.list-item {
+	list-style-type: none;
+	padding: 1em;
+
+	color: var(--colors-black);
+	border: 1px solid var(--colors-bright-black);
+	background-color: var(--colors-bright-white);
+	background-size: cover;
+}
+
+ul.list-group:not(.horizontal) li.list-item {
+	border-top-width: 0px;
+}
+
+ul.list-group li.list-item:first-child {
+	border-radius: 3px 3px 0px 0px;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+}
+
+ul.list-group li.list-item:last-child {
+	border-radius: 0px 0px 3px 3px;
+}
+
+ul.list-group li.list-item.disabled {
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
+/* Horizontal list groups */
+
+ul.list-group.horizontal {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+ul.list-group.horizontal li.list-item {
+	border-right-width: 0px;
+}
+
+ul.list-group.horizontal.auto li.list-item {
+	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto; /* Safari */
+	-ms-flex: 1 0 auto; /* IE 10 */
+}
+
+ul.list-group.horizontal li.list-item:first-child {
+	border-radius: 3px 0px 0px 3px;
+}
+
+ul.list-group.horizontal li.list-item:last-child {
+	border-radius: 0px 3px 3px 0px;
+	border-right-width: 1px;
+}
+
+/* Colors */
+
+ul.list-group li.list-item.active {
+	color: var(--colors-white);
+	background-color: var(--colors-blue);
+}
+
+ul.list-group-white li.list-item.active {
+	color: var(--colors-black);
+	background-color: var(--colors-white);
+}
+
+ul.list-group-black li.list-item.active {
+	background-color: var(--colors-black);
+}
+
+ul.list-group-red li.list-item.active {
+	background-color: var(--colors-red);
+}
+
+ul.list-group-green li.list-item.active {
+	background-color: var(--colors-green);
+}
+
+ul.list-group-yellow li.list-item.active {
+	background-color: var(--colors-yellow);
+}
+
+ul.list-group-blue li.list-item.active {
+	background-color: var(--colors-blue);
+}
+
+ul.list-group-magenta li.list-item.active {
+	background-color: var(--colors-magenta);
+}
+
+ul.list-group-cyan li.list-item.active {
+	background-color: var(--colors-cyan);
+}
+
+/* Clear lists */
+
+ul[class *= "list-group-clear-"] li.list-item.active {
+	background-color: var(--colors-bright-white);
+}
+
+ul.list-group-clear-white li.list-item.active {
+	color: var(--colors-white);
+}
+
+ul.list-group-clear-black li.list-item.active {
+	color: var(--colors-black);
+}
+
+ul.list-group-clear-red li.list-item.active {
+	color: var(--colors-red);
+}
+
+ul.list-group-clear-green li.list-item.active {
+	color: var(--colors-green);
+}
+
+ul.list-group-clear-yellow li.list-item.active {
+	color: var(--colors-yellow);
+}
+
+ul.list-group-clear-blue li.list-item.active {
+	color: var(--colors-blue);
+}
+
+ul.list-group-clear-magenta li.list-item.active {
+	color: var(--colors-magenta);
+}
+
+ul.list-group-clear-cyan li.list-item.active {
+	color: var(--colors-cyan);
+}
+
+/*
+	Navbar Menu
+ */
+
+div.menu {
+	display: flex;
+}
+
+div.menu a {
+	text-decoration: none !important;
+	padding: 0.5em 1em;
+}
+
+div.menu-left {
+	float: left;
+}
+
+div.menu-center {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
+div.menu-right {
+	float: right;
+}
+
+/* Colors */
+
+div.menu-white a {
+	color: var(--colors-white);
+}
+
+div.menu-white a:hover {
+	border-bottom: 1px solid var(--colors-bright-white);
+}
+
+div.menu-black a {
+	color: var(--colors-black);
+}
+
+div.menu-black a:hover {
+	border-bottom: 1px solid var(--colors-bright-black);
+}
+
+div.menu-red a {
+	color: var(--colors-red);
+}
+
+div.menu-red a:hover {
+	border-bottom: 1px solid var(--colors-bright-red);
+}
+
+div.menu-green a {
+	color: var(--colors-green);
+}
+
+div.menu-green a:hover {
+	border-bottom: 1px solid var(--colors-bright-green);
+}
+
+div.menu-yellow a {
+	color: var(--colors-yellow);
+}
+
+div.menu-yellow a:hover {
+	border-bottom: 1px solid var(--colors-bright-yellow);
+}
+
+div.menu-blue a {
+	color: var(--colors-blue);
+}
+
+div.menu-blue a:hover {
+	border-bottom: 1px solid var(--colors-bright-blue);
+}
+
+div.menu-magenta a {
+	color: var(--colors-magenta);
+}
+
+div.menu-magenta a:hover {
+	border-bottom: 1px solid var(--colors-bright-magenta);
+}
+
+div.menu-cyan a {
+	color: var(--colors-cyan);
+}
+
+div.menu-cyan a:hover {
+	border-bottom: 1px solid var(--colors-bright-cyan);
+}
+
+/*
+	Callout
+ */
+
+.callout {
+	width: 100%;
+	min-height: 1px;
+	padding: 1em;
+	border-radius: 3px;
+	background-size: cover;
+	color: var(--colors-black);
+}
+
+.callout-white {
+	background-color: var(--colors-white);
+}
+
+.callout-black {
+	background-color: var(--colors-black);
+	color: var(--colors-white);
+}
+
+.callout-red {
+	background-color: var(--colors-bright-red);
+	border: 1px solid var(--colors-red);
+}
+
+.callout-green {
+	background-color: var(--colors-bright-green);
+	border: 1px solid var(--colors-green);
+}
+
+.callout-yellow {
+	background-color: var(--colors-bright-yellow);
+	border: 1px solid var(--colors-yellow);
+}
+
+.callout-blue {
+	background-color: var(--colors-bright-blue);
+	border: 1px solid var(--colors-blue);
+}
+
+.callout-magenta {
+	background-color: var(--colors-bright-magenta);
+	border: 1px solid var(--colors-magenta);
+}
+
+.callout-cyan {
+	background-color: var(--colors-bright-cyan);
+	border: 1px solid var(--colors-cyan);
+}
+
+/*
+	Tables
+ */
+
+table {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	max-width: 100%;
+}
+
+table th {
+	font-weight: 600;
+	color: var(--colors-black);
+	background-color: var(--default-page-background);
+}
+
+table.stack thead,
+table.stack tr,
+table.stack tr td {
+	display: block;
+}
+
+table.stack thead tr {
+	display: none;
+}
+
+@media (min-width: 766px) {
+	table.stack tr,
+	table.stack thead tr {
+		display: table-row;
+	}
+
+	table.stack tr td {
+		display: table-cell;
+	}
+
+	table.stack thead {
+		display: table-header-group;
+	}
+}
+
+table tr {
+	transition: background-color 0.15s;
+}
+
+table td {
+	font-weight: 500;
+	color: var(--colors-black);
+}
+
+table, th, td {
+	text-align: left;
+	padding: 0.6em;
+	border-collapse: collapse;
+}
+
+thead tr th,
+tbody tr td {
+	line-height: 1.6;
+}
+
+table caption {
+	line-height: 1.8;
+}
+
+/* Table styles */
+
+table.stripped tr:nth-child(even) {
+	background-color: var(--default-page-background);
+}
+
+table.stripped tr:nth-child(odd) {
+	background-color: var(--colors-bright-white);
+}
+
+table.hover tr:hover {
+	background-color: var(--colors-bright-white);
+}
+
+table:not(.borderless),
+table:not(.borderless) td {
+	border-bottom: 1px solid var(--colors-bright-black);
+}
+
+table:not(.borderless) th {
+	border-bottom: 2px solid var(--colors-bright-black);
+}

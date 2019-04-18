@@ -1,0 +1,139 @@
+<!--
+   Simplicity Design made by Mads T. Kristiansen, 2019.
+  
+   This file is part of Simplicity Design.
+  
+   Simplicity Design is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published
+   by the Free Software Foundation; either version 2 of the License,
+   or (at your option) any later version.
+ 
+   Simplicity Design is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+ 
+   You should have received a copy of the GNU General Public License
+   along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Example 01 - Grids</title>
+
+		<link rel="stylesheet" href="../css/simplicity-design.css">
+		<link rel="stylesheet" href="../css/skins/default.css">
+	</head>
+	<body>
+		<div class="title-container container">
+			<h1 class="title text-center">Example 01</h1>
+			<h4 class="subtitle text-center">Grids</h4>
+		</div>
+		<div class="container">
+			<div class="container">
+				<h1 class="display4 text-center">Large grid example</h1>
+				<div class="grid-large">
+					<div class="col-4 background-red">
+						<h3>First column</h3>
+					</div>
+					<div class="col-4 background-blue">
+						<h3>Second column</h3>
+					</div>
+					<div class="col-4 background-green">
+						<h3>Third column</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<h1 class="display4 text-center">Small grid example</h1>
+				<div class="grid-small">
+					<div class="col-4 background-red">
+						<h5>First column</h5>
+					</div>
+					<div class="col-4 background-blue">
+						<h5>Second column</h5>
+					</div>
+					<div class="col-4 background-green">
+						<h5>Third column</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<span class="text-center info-field" style="margin-top: 3em;">
+					This is how simple grids are setup using Simplicity Design. While similar to Bootstrap and Foundation, the changes required to change the grid preset are more managable. This is because the entire grid has a size set on creation, which will apply to the following column elements.<br><br>
+					To see the effects on grid presets, resize the browser window and see the how the grids react, according to their size preset.
+				</span>
+			</div>
+
+			<h1 class="display4 text-center">Comparison</h1>
+			<div class="grid-mega">
+				<div class="col-4">
+					<div class="panel panel-clear">
+						<h4 class="panel-header text-center center">Boostrap</h4>
+						<div class="panel-body">
+							<pre class="code-field"><code>
+<span>&lt;div class="<b>row</b>"&gt;</span>
+<span>	&lt;div class="<b>col-sm-4</b>"&gt;</span>
+<span>		&lt;h4&gt;First column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>	&lt;div class="<b>col-sm-4</b>"&gt;</span>
+<span>		&lt;h4&gt;Second column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>	&lt;div class="<b>col-sm-4</b>"&gt;</span>
+<span>		&lt;h4&gt;Third column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>&lt;/div&gt;</span>
+							</code></pre>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel panel-clear">
+						<h4 class="panel-header text-center center">Simplicity Design</h4>
+						<div class="panel-body">
+							<pre class="code-field"><code>
+<span>&lt;div class="<b>grid grid-small</b>"&gt;</span>
+<span>	&lt;div class="<b>col-4</b>"&gt;</span>
+<span>		&lt;h4&gt;First column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>	&lt;div class="<b>col-4</b>"&gt;</span>
+<span>		&lt;h4&gt;Second column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>	&lt;div class="<b>col-4</b>"&gt;</span>
+<span>		&lt;h4&gt;Third column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>&lt;/div&gt;</span>
+							</code></pre>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel panel-clear">
+						<h4 class="panel-header text-center center">Foundation</h4>
+						<div class="panel-body">
+							<pre class="code-field"><code>
+<span>&lt;div class="<b>grid-x</b>"&gt;</span>
+<span>	&lt;div class="<b>cell small-4</b>"&gt;</span>
+<span>		&lt;h4&gt;First column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>	&lt;div class="<b>cell small-4</b>"&gt;</span>
+<span>		&lt;h4&gt;Second column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>	&lt;div class="<b>cell small-4</b>"&gt;</span>
+<span>		&lt;h4&gt;Third column.&lt;/h4&gt;</span>
+<span>	&lt;/div&gt;</span>
+<span>&lt;/div&gt;</span>
+							</code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

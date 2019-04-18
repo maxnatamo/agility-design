@@ -1,0 +1,208 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+	Radio and Checkboxes
+ */
+
+.switch {
+	margin-bottom: 1em;
+	height: 1.5em;
+}
+
+.switch-input {
+	position: absolute;
+	margin-bottom: 0;
+	opacity: 0;
+}
+
+.switch-paddle {
+	position: absolute;
+	width: 3rem;
+	height: 1.5em;
+
+	cursor: pointer;
+	padding: 0.125em;
+	border-radius: 0.75em;
+	transition: all 0.25s;
+}
+
+.switch-paddle .switch-knob {
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+
+	margin-top: 0.05em;
+	border-radius: 0.6em;
+	background-color: var(--colors-white);
+	background-size: cover;
+	transition: all 0.25s;
+}
+
+input[type="checkbox"]:not(:checked) ~ .switch-paddle,
+input[type="radio"]:not(:checked) ~ .switch-paddle {
+	background-color: var(--unchecked-checkbox-background);
+}
+
+input[type="checkbox"]:checked ~ .switch-paddle,
+input[type="radio"]:checked ~ .switch-paddle {
+	background-color: var(--checked-checkbox-background);
+}
+
+input[type="checkbox"]:checked ~ .switch-paddle .switch-knob,
+input[type="radio"]:checked ~ .switch-paddle .switch-knob {
+	margin-left: calc(3em - 1.2em - 0.125em - 0.125em);
+}
+
+/*
+	Text Fields
+ */
+
+input[type="text"] {
+	transition: border 0.15s;
+	border: 1px solid var(--colors-white);
+	border-radius: 3px;
+}
+
+input[type="text"]:focus {
+	border: 1px solid var(--colors-blue);
+}
+
+/* Text field sizes */
+
+input[type="text"].small,
+.small input[type="text"] {
+	font-size: 10px;
+}
+
+input[type="text"].medium,
+.medium input[type="text"] {
+	font-size: 14px;
+}
+
+input[type="text"].large,
+.large input[type="text"] {
+	font-size: 18px;
+}
+
+/* Text Field colors */
+
+input[type="text"].black:focus,
+.black input[type="text"]:focus {
+	border: 1px solid var(--colors-black);
+}
+
+input[type="text"].white:focus,
+.white input[type="text"]:focus {
+	border: 1px solid var(--colors-white);
+}
+
+input[type="text"].red:focus,
+.red input[type="text"]:focus {
+	border: 1px solid var(--colors-red);
+}
+
+input[type="text"].green:focus,
+.green input[type="text"]:focus {
+	border: 1px solid var(--colors-green);
+}
+
+input[type="text"].yellow:focus,
+.yellow input[type="text"]:focus {
+	border: 1px solid var(--colors-yellow);
+}
+
+input[type="text"].blue:focus,
+.blue input[type="text"]:focus {
+	border: 1px solid var(--colors-blue);
+}
+
+input[type="text"].magenta:focus,
+.magenta input[type="text"]:focus {
+	border: 1px solid var(--colors-magenta);
+}
+
+input[type="text"].cyan:focus,
+.cyan input[type="text"]:focus {
+	border: 1px solid var(--colors-cyan);
+}
+
+/*
+	Input Groups
+ */
+
+.input-group {
+	width: 100%;
+	display: flex;
+	font-size: 14px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.input-group .prefix,
+.input-group .suffix {
+	color: var(--colors-black);
+	background-color: var(--colors-bright-white);
+	background-size: cover;
+	display: flex;
+}
+
+.input-group .suffix {
+	margin-left: 2px;
+}
+
+.input-group .prefix :not(.btn-group),
+.input-group .suffix :not(.btn-group) {
+	font-size: inherit;
+	padding: 0.375em 1em;
+	vertical-align: middle;
+}
+
+.input-group input[type="text"] {
+	padding: 0;
+	padding-left: 0.5em;
+	font-size: inherit;
+}
+
+.input-group .prefix:not(:first-child),
+.input-group .suffix:not(:last-child),
+.input-group *:not(:first-child),
+.input-group *:not(:last-child) {
+	border-radius: 0px;
+}
+
+.input-group *:first-child {
+	border-radius: 3px 0px 3px 0px;
+}
+
+.input-group *:last-child,
+.input-group *:last-child .btn-group input.btn:last-child {
+	border-radius: 0px 3px 3px 0px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.input-group > .prefix > .btn-group {
+	padding-right: 2px;
+	margin-left: 2px;
+}
+
+.input-group.small { font-size: 12px; }
+.input-group.medium { font-size: 14px; }
+.input-group.large { font-size: 18px; }

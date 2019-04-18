@@ -1,0 +1,299 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+	Code fields
+ */
+
+.code-field {
+	background-color: var(--code-background);
+	border: 1px solid var(--code-border);
+	border-radius: 3px;
+	
+	margin-bottom: 0em;
+	padding-left: 1em;
+}
+
+.code-field > code {
+	background-color: var(--code-background);
+	font-family: Consolas, Courier New, sans-serif;
+	font-size: 12px;
+}
+
+.code-field > code span {
+	width: 100%;
+}
+
+.code-field > code span:nth-child(even) {
+	background-color: var(--code-background-even);
+	display: inline-block;
+	background-size: cover;
+}
+
+.code-field > code span:nth-child(odd) {
+	background-color: var(--code-background-odd);
+	display: inline-block;
+	background-size: cover;
+}
+
+.panel-clear .code-field > code span:nth-child(even) {
+	background-color: var(--default-page-background);
+}
+
+/*
+	Borders
+ */
+
+.border {
+	border: 1px solid var(--colors-black);
+}
+
+/* Border sizes */
+
+.border-small {
+	border-width: 1px;
+}
+
+.border-medium {
+	border-width: 2px;
+}
+
+.border-large {
+	border-width: 4px;
+}
+
+.border-mega {
+	border-width: 6px;
+}
+
+/* Border colors */
+
+.border-white {
+	border-color: var(--colors-white);
+}
+
+.border-black {
+	border-color: var(--colors-black);
+}
+
+.border-red {
+	border-color: var(--colors-red);
+}
+
+.border-green {
+	border-color: var(--colors-green);
+}
+
+.border-yellow {
+	border-color: var(--colors-yellow);
+}
+
+.border-blue {
+	border-color: var(--colors-blue);
+}
+
+.border-magenta {
+	border-color: var(--colors-magenta);
+}
+
+.border-cyan {
+	border-color: var(--colors-cyan);
+}
+
+/*
+	Notifications
+ */
+
+.notification {
+	display: inline-block;
+	min-width: 2em;
+	border: 0px;
+	border-radius: 0.25em;
+	font-weight: 600;
+	background-size: cover;
+	text-align: center;
+
+	height: 2em;
+	padding: 0.25em 0.5em;
+	line-height: calc(2em - 0.5em);
+}
+
+li .notification {
+	float: right;
+}
+
+/* Notification styles */
+
+.notification.rounded {
+	border-radius: 1em;
+}
+
+.notification-tiny.rounded {
+	border-radius: 1em;
+}
+
+.notification-small.rounded {
+	border-radius: 2em;
+}
+
+.notification-medium.rounded {
+	border-radius: 3em;
+}
+
+.notification-large.rounded {
+	border-radius: 4em;
+}
+
+/* Notification sizes */
+
+.notification-tiny {
+	font-size: 0.75em;
+}
+
+.notification-small {
+	font-size: 1em;
+}
+
+.notification-medium {
+	font-size: 1.5em;
+}
+
+.notification-large {
+	font-size: 2em;
+}
+
+/* Notification colors */
+
+.notification.white {
+	background-color: var(--colors-white);
+	color: var(--colors-black);
+}
+
+.notification.black {
+	background-color: var(--colors-black);
+	color: var(--colors-white);
+}
+
+.notification.red {
+	background-color: var(--colors-red);
+	color: var(--colors-white);
+}
+
+.notification.green {
+	background-color: var(--colors-green);
+	color: var(--colors-white);
+}
+
+.notification.yellow {
+	background-color: var(--colors-yellow);
+	color: var(--colors-white);
+}
+
+.notification.blue {
+	background-color: var(--colors-blue);
+	color: var(--colors-white);
+}
+
+.notification.magenta {
+	background-color: var(--colors-magenta);
+	color: var(--colors-white);
+}
+
+.notification.cyan {
+	background-color: var(--colors-cyan);
+	color: var(--colors-white);
+}
+
+/*
+	Alerts
+ */
+
+.alert {
+	font-size: 1rem;
+	text-align: left;
+	padding: 1em 1.5em;
+	border-radius: 0.5em;
+	margin: 1em;
+}
+
+.alert .close,
+.callout .close {
+	background-color: transparent;
+	border: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	cursor: pointer;
+	color: inherit;
+	height: 100%;
+	width: auto;
+	float: right;
+	font-size: 1rem;
+}
+
+/* Alert colors */
+
+.alert-white {
+	border: 1px solid var(--colors-dark-white);
+	background-color: var(--colors-white);
+	color: var(--colors-dark-white);
+}
+
+.alert-black {
+	border: 1px solid var(--colors-dark-white);
+	background-color: var(--colors-bright-black);
+	color: var(--colors-dark-white);
+}
+
+.alert-red {
+	border: 1px solid var(--colors-dark-red);
+	background-color: var(--colors-bright-red);
+	color: var(--colors-dark-red);
+}
+
+.alert-green {
+	border: 1px solid var(--colors-dark-green);
+	background-color: var(--colors-bright-green);
+	color: var(--colors-dark-green);
+}
+
+.alert-yellow {
+	border: 1px solid var(--colors-dark-yellow);
+	background-color: var(--colors-bright-yellow);
+	color: var(--colors-dark-yellow);
+}
+
+.alert-blue {
+	border: 1px solid var(--colors-dark-blue);
+	background-color: var(--colors-bright-blue);
+	color: var(--colors-dark-blue);
+}
+
+.alert-magenta {
+	border: 1px solid var(--colors-dark-magenta);
+	background-color: var(--colors-bright-magenta);
+	color: var(--colors-dark-magenta);
+}
+
+.alert-cyan {
+	border: 1px solid var(--colors-dark-cyan);
+	background-color: var(--colors-bright-cyan);
+	color: var(--colors-dark-cyan);
+}

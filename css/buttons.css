@@ -1,0 +1,463 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.btn {
+    color: var(--colors-white);
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 2em;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn:enabled {
+    transition: background-color 0.15s, color 0.15s;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+    transition: none;
+}
+
+.btn-small {
+    font-size: 12px;
+    padding: 0.35em 1.5em;
+}
+
+.btn-large {
+    font-size: 20px;
+    padding: 0.75em 2.5em;
+}
+
+.btn-full {
+    min-width: 100%;
+}
+
+.btn.upper {
+    text-transform: uppercase;
+}
+
+/*
+    Buttons groups
+ */
+
+.btn-group .btn {
+    width: 100%;
+    margin-left: -2px;
+    margin-right: -2px;
+    border-radius: 0px;
+}
+
+.btn-group .btn:first-child {
+    border-radius: 3px 3px 0px 0px;
+}
+
+.btn-group .btn:last-child {
+    border-radius: 0px 0px 3px 3px;
+}
+
+@media (min-width: 766px) {
+    .btn-group .btn {
+        width: initial;
+    }
+
+    .btn-group .btn:first-child {
+        border-radius: 3px 0px 0px 3px;
+    }
+    
+    .btn-group .btn:last-child {
+        border-radius: 0px 3px 3px 0px;
+    }
+    
+    .input-group .prefix .btn-group .btn:last-child {
+        border-radius: 0px;
+    }
+
+    .input-group .suffix .btn-group .btn:first-child {
+        border-radius: 0px;
+    }
+
+    .input-group .prefix .btn-group .btn:first-child:first-child {
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .input-group .suffix .btn-group .btn:first-child:first-child {
+        border-radius: 0px 3px 3px 0px;
+    }
+}
+
+.btn-group-small .btn {
+    font-size: 12px;
+    padding: 0.75em 1.5em;
+}
+
+.btn-group-large .btn {
+    font-size: 20px;
+    padding: 1.25em 2.5em;
+}
+
+.btn-group-auto {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+}
+
+.btn-group-auto .btn {
+    flex: 1 0 auto;
+	-webkit-flex: 1 0 auto; /* Safari */
+	-ms-flex: 1 0 auto; /* IE 10 */
+}
+
+/*
+    Buttons
+ */
+
+/* Default state */
+
+.btn-white {
+    background-color: var(--colors-bright-white);
+    color: var(--colors-black);
+}
+
+.btn-black {
+    background-color: var(--colors-black);
+}
+
+.btn-red {
+    background-color: var(--colors-red);
+}
+
+.btn-green {
+    background-color: var(--colors-green);
+}
+
+.btn-yellow {
+    background-color: var(--colors-yellow);
+}
+
+.btn-blue {
+    background-color: var(--colors-blue);
+}
+
+.btn-magenta {
+    background-color: var(--colors-magenta);
+}
+
+.btn-cyan {
+    background-color: var(--colors-cyan);
+}
+
+/* Outlined buttons */
+
+[class ^= "btn-outline-"] {
+    background-color: transparent;
+}
+
+.btn-outline-white {
+    color: var(--colors-black);
+    border: 1px solid var(--colors-white);
+}
+
+.btn-outline-black {
+    color: var(--colors-black);
+    border: 1px solid var(--colors-black);
+}
+
+.btn-outline-red {
+    color: var(--colors-red);
+    border: 1px solid var(--colors-red);
+}
+
+.btn-outline-green {
+    color: var(--colors-green);
+    border: 1px solid var(--colors-green);
+}
+
+.btn-outline-yellow {
+    color: var(--colors-yellow);
+    border: 1px solid var(--colors-yellow);
+}
+
+.btn-outline-blue {
+    color: var(--colors-blue);
+    border: 1px solid var(--colors-blue);
+}
+
+.btn-outline-magenta {
+    color: var(--colors-magenta);
+    border: 1px solid var(--colors-magenta);
+}
+
+.btn-outline-cyan {
+    color: var(--colors-cyan);
+    border: 1px solid var(--colors-cyan);
+}
+
+/* Clear Buttons */
+
+.btn-clear-white {
+    color: var(--colors-white);
+}
+
+.btn-clear-black {
+    color: var(--colors-black);
+}
+
+.btn-clear-red {
+    color: var(--colors-red);
+}
+
+.btn-clear-green {
+    color: var(--colors-green);
+}
+
+.btn-clear-yellow {
+    color: var(--colors-yellow);
+}
+
+.btn-clear-blue {
+    color: var(--colors-blue);
+}
+
+.btn-clear-magenta {
+    color: var(--colors-magenta);
+}
+
+.btn-clear-cyan {
+    color: var(--colors-cyan);
+}
+
+/* Push Buttons */
+
+ [class *= "btn-push-"] {
+    background-size: cover;
+    border-radius: 3px;
+    border: 0px;
+    margin-top: 0px;
+    transition: border-bottom 0.1s;
+    color: var(--colors-white);
+
+    /* Default colors */
+    background-color: var(--colors-white);
+    border-bottom: 3px solid var(--colors-dark-white);
+}
+
+[class *= "btn-push-"]:active {
+    margin-top: 2px;
+}
+
+/* Push button colors */
+
+.btn-push-white {
+    background-color: var(--colors-white);
+    border-bottom: 3px solid var(--colors-dark-white);
+    color: var(--colors-black);
+}
+
+.btn-push-white:active {
+    border-bottom: 1px solid var(--colors-dark-white);
+    color: var(--colors-black);
+}
+
+.btn-push-black {
+    background-color: var(--colors-black);
+    border-bottom: 3px solid var(--colors-dark-black);
+}
+
+.btn-push-black:active {
+    border-bottom: 1px solid var(--colors-dark-black);
+}
+
+.btn-push-red {
+    background-color: var(--colors-red);
+    border-bottom: 3px solid var(--colors-dark-red);
+}
+
+.btn-push-red:active {
+    border-bottom: 1px solid var(--colors-dark-red);
+}
+
+.btn-push-green {
+    background-color: var(--colors-green);
+    border-bottom: 3px solid var(--colors-dark-green);
+}
+
+.btn-push-green:active {
+    border-bottom: 1px solid var(--colors-dark-green);
+}
+
+.btn-push-yellow {
+    background-color: var(--colors-yellow);
+    border-bottom: 3px solid var(--colors-dark-yellow);
+}
+
+.btn-push-yellow:active {
+    border-bottom: 1px solid var(--colors-dark-yellow);
+}
+
+.btn-push-blue {
+    background-color: var(--colors-blue);
+    border-bottom: 3px solid var(--colors-dark-blue);
+}
+
+.btn-push-blue:active {
+    border-bottom: 1px solid var(--colors-dark-blue);
+}
+
+.btn-push-magenta {
+    background-color: var(--colors-magenta);
+    border-bottom: 3px solid var(--colors-dark-magenta);
+}
+
+.btn-push-magenta:active {
+    border-bottom: 1px solid var(--colors-dark-magenta);
+}
+
+.btn-push-cyan {
+    background-color: var(--colors-cyan);
+    border-bottom: 3px solid var(--colors-dark-cyan);
+}
+
+.btn-push-cyan:active {
+    border-bottom: 1px solid var(--colors-dark-cyan);
+}
+
+/*
+    Hovering
+ */
+
+/* Regular buttons */
+
+.btn-white:enabled:hover {
+    background-color: var(--colors-bright-white);
+    color: var(--colors-black);
+}
+
+.btn-black:enabled:hover {
+    background-color: var(--colors-bright-black);
+}
+
+.btn-red:enabled:hover {
+    background-color: var(--colors-bright-red);
+}
+
+.btn-green:enabled:hover {
+    background-color: var(--colors-bright-green);
+}
+
+.btn-yellow:enabled:hover {
+    background-color: var(--colors-bright-yellow);
+}
+
+.btn-blue:enabled:hover {
+    background-color: var(--colors-bright-blue);
+}
+
+.btn-magenta:enabled:hover {
+    background-color: var(--colors-bright-magenta);
+}
+
+.btn-cyan:enabled:hover {
+    background-color: var(--colors-bright-cyan);
+}
+
+/* Outlined buttons */
+
+.btn-outline-white:enabled:hover {
+    background-color: var(--colors-white);
+    color: var(--colors-black);
+}
+
+.btn-outline-black:enabled:hover {
+    background-color: var(--colors-black);
+    color: var(--colors-white);
+}
+
+.btn-outline-red:enabled:hover {
+    background-color: var(--colors-red);
+    color: var(--colors-white);
+}
+
+.btn-outline-green:enabled:hover {
+    background-color: var(--colors-green);
+    color: var(--colors-white);
+}
+
+.btn-outline-yellow:enabled:hover {
+    background-color: var(--colors-yellow);
+    color: var(--colors-white);
+}
+
+.btn-outline-blue:enabled:hover {
+    background-color: var(--colors-blue);
+    color: var(--colors-white);
+}
+
+.btn-outline-magenta:enabled:hover {
+    background-color: var(--colors-magenta);
+    color: var(--colors-white);
+}
+
+.btn-outline-cyan:enabled:hover {
+    background-color: var(--colors-cyan);
+    color: var(--colors-white);
+}
+
+/* Clear Buttons */
+
+.btn-clear-white:hover {
+    background-color: var(--colors-bright-white);
+    color: var(--colors-bright-black);
+}
+
+.btn-clear-black:hover {
+    background-color: var(--colors-bright-black);
+    color: var(--colors-bright-white);
+}
+
+.btn-clear-red:hover {
+    background-color: var(--colors-bright-red);
+    color: var(--colors-bright-white);
+}
+
+.btn-clear-green:hover {
+    background-color: var(--colors-bright-green);
+    color: var(--colors-bright-white);
+}
+
+.btn-clear-yellow:hover {
+    background-color: var(--colors-bright-yellow);
+    color: var(--colors-bright-white);
+}
+
+.btn-clear-blue:hover {
+    background-color: var(--colors-bright-blue);
+    color: var(--colors-bright-white);
+}
+
+.btn-clear-magenta:hover {
+    background-color: var(--colors-bright-magenta);
+    color: var(--colors-bright-white);
+}
+
+.btn-clear-cyan:hover {
+    background-color: var(--colors-bright-cyan);
+    color: var(--colors-bright-white);
+}

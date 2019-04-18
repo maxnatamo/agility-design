@@ -1,0 +1,380 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+	Core rules
+ */
+
+.grid-small,
+.grid-medium,
+.grid-large,
+.grid-mega {
+	width: 100%;
+}
+
+ /* Default cell rules */
+ .grid-mega div[class *= "col-"],
+ .grid-large div[class *= "col-"],
+ .grid-medium div[class *= "col-"],
+ .grid-small div[class *= "col-"] {
+	 float: left;
+	 min-height: 1px;
+	 position: relative;
+	 padding-right: 15px;
+	 padding-left: 15px;
+ }
+
+/*
+	Offset rules
+ */
+
+.grid-align-left {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.grid-align-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.grid-align-right {
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.grid-align-justify {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.grid-align-spaced {
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+/*
+	Cells
+ */
+
+/* Small cells */
+@media (min-width: 576px) {
+	.grid-small {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	}
+
+	.grid-small .col-1 {
+		width: calc(100% / 12);
+	}
+
+	.grid-small .col-2 {
+		width: calc(100% / 12 * 2);
+	}
+
+	.grid-small .col-3 {
+		width: calc(100% / 12 * 3);
+	}
+
+	.grid-small .col-4 {
+		width: calc(100% / 12 * 4);
+	}
+
+	.grid-small .col-5 {
+		width: calc(100% / 12 * 5);
+	}
+
+	.grid-small .col-6 {
+		width: calc(100% / 12 * 6);
+	}
+
+	.grid-small .col-7 {
+		width: calc(100% / 12 * 7);
+	}
+
+	.grid-small .col-8 {
+		width: calc(100% / 12 * 8);
+	}
+
+	.grid-small .col-9 {
+		width: calc(100% / 12 * 9);
+	}
+
+	.grid-small .col-10 {
+		width: calc(100% / 12 * 10);
+	}
+
+	.grid-small .col-11 {
+		width: calc(100% / 12 * 11);
+	}
+
+	.grid-small .col-12 {
+		width: 100%;
+	}
+
+	.grid-small .col-auto {
+		flex: 1 0 auto;
+		-webkit-flex: 1 0 auto; /* Safari */
+		-ms-flex: 1 0 auto; /* IE 10 */
+	}
+}
+
+/* Medium cells */
+@media (min-width:768px) {
+	.grid-medium {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	}
+
+	.grid-medium .col-1 {
+		width: calc(100% / 12);
+	}
+
+	.grid-medium .col-2 {
+		width: calc(100% / 12 * 2);
+	}
+
+	.grid-medium .col-3 {
+		width: calc(100% / 12 * 3);
+	}
+
+	.grid-medium .col-4 {
+		width: calc(100% / 12 * 4);
+	}
+
+	.grid-medium .col-5 {
+		width: calc(100% / 12 * 5);
+	}
+
+	.grid-medium .col-6 {
+		width: calc(100% / 12 * 6);
+	}
+
+	.grid-medium .col-7 {
+		width: calc(100% / 12 * 7);
+	}
+
+	.grid-medium .col-8 {
+		width: calc(100% / 12 * 8);
+	}
+
+	.grid-medium .col-9 {
+		width: calc(100% / 12 * 9);
+	}
+
+	.grid-medium .col-10 {
+		width: calc(100% / 12 * 10);
+	}
+
+	.grid-medium .col-11 {
+		width: calc(100% / 12 * 11);
+	}
+
+	.grid-medium .col-12 {
+		width: 100%;
+	}
+
+	.grid-medium .col-auto {
+		flex: 1 0 auto;
+		-webkit-flex: 1 0 auto; /* Safari */
+		-ms-flex: 1 0 auto; /* IE 10 */
+	}
+}
+
+/* Large cells */
+@media (min-width:992px) {
+	.grid-large {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	}
+
+	.grid-large .col-1 {
+		width: calc(100% / 12);
+	}
+
+	.grid-large .col-2 {
+		width: calc(100% / 12 * 2);
+	}
+
+	.grid-large .col-3 {
+		width: calc(100% / 12 * 3);
+	}
+
+	.grid-large .col-4 {
+		width: calc(100% / 12 * 4);
+	}
+
+	.grid-large .col-5 {
+		width: calc(100% / 12 * 5);
+	}
+
+	.grid-large .col-6 {
+		width: calc(100% / 12 * 6);
+	}
+
+	.grid-large .col-7 {
+		width: calc(100% / 12 * 7);
+	}
+
+	.grid-large .col-8 {
+		width: calc(100% / 12 * 8);
+	}
+
+	.grid-large .col-9 {
+		width: calc(100% / 12 * 9);
+	}
+
+	.grid-large .col-10 {
+		width: calc(100% / 12 * 10);
+	}
+
+	.grid-large .col-11 {
+		width: calc(100% / 12 * 11);
+	}
+
+	.grid-large .col-12 {
+		width: 100%;
+	}
+
+	.grid-large .col-auto {
+		flex: 1 0 auto;
+		-webkit-flex: 1 0 auto; /* Safari */
+		-ms-flex: 1 0 auto; /* IE 10 */
+	}
+}
+
+/* Mega cells */
+@media (min-width:1200px) {
+	.grid-mega {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	}
+
+	.grid-mega .col-1 {
+		width: calc(100% / 12);
+	}
+
+	.grid-mega .col-2 {
+		width: calc(100% / 12 * 2);
+	}
+
+	.grid-mega .col-3 {
+		width: calc(100% / 12 * 3);
+	}
+
+	.grid-mega .col-4 {
+		width: calc(100% / 12 * 4);
+	}
+
+	.grid-mega .col-5 {
+		width: calc(100% / 12 * 5);
+	}
+
+	.grid-mega .col-6 {
+		width: calc(100% / 12 * 6);
+	}
+
+	.grid-mega .col-7 {
+		width: calc(100% / 12 * 7);
+	}
+
+	.grid-mega .col-8 {
+		width: calc(100% / 12 * 8);
+	}
+
+	.grid-mega .col-9 {
+		width: calc(100% / 12 * 9);
+	}
+
+	.grid-mega .col-10 {
+		width: calc(100% / 12 * 10);
+	}
+
+	.grid-mega .col-11 {
+		width: calc(100% / 12 * 11);
+	}
+
+	.grid-mega .col-12 {
+		width: 100%;
+	}
+
+	.grid-mega .col-auto {
+		flex: 1 0 auto;
+		-webkit-flex: 1 0 auto; /* Safari */
+		-ms-flex: 1 0 auto; /* IE 10 */
+	}
+}
+
+/* Minimizing cells */
+@media (max-width:575px) {
+	.grid-small div[class *= "col-"] {
+		width: 100%;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.div-small {
+		display: inline;
+	}
+}
+
+@media (max-width:765px) {
+	.grid-medium div[class *= "col-"] {
+		width: 100%;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.grid-medium {
+		display: inline;
+	}
+}
+
+@media (max-width:991px) {
+	.grid-large div[class *= "col-"] {
+		width: 100%;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.grid-large {
+		display: inline;
+	}
+}
+
+@media (max-width:1199px) {
+	.grid-mega div[class *= "col-"] {
+		width: 100%;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.grid-mega {
+		display: inline;
+	}
+}

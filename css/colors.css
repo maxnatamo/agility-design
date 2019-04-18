@@ -1,0 +1,220 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+	Text colors
+ */
+
+/* Regular colors */
+
+.color-white {
+	color: var(--colors-white);
+}
+
+.color-black {
+	color: var(--colors-black);
+}
+
+.color-red {
+	color: var(--colors-red);
+}
+
+.color-green {
+	color: var(--colors-green);
+}
+
+.color-yellow {
+	color: var(--colors-yellow);
+}
+
+.color-blue {
+	color: var(--colors-blue);
+}
+
+.color-magenta {
+	color: var(--colors-magenta);
+}
+
+.color-cyan {
+	color: var(--colors-cyan);
+}
+
+/* Bright colors */
+
+.color-bright-white {
+	color: var(--colors-bright-white);
+}
+
+.color-bright-black {
+	color: var(--colors-bright-black);
+}
+
+.color-bright-red {
+	color: var(--colors-bright-red);
+}
+
+.color-bright-green {
+	color: var(--colors-bright-green);
+}
+
+.color-bright-yellow {
+	color: var(--colors-bright-yellow);
+}
+
+.color-bright-blue {
+	color: var(--colors-bright-blue);
+}
+
+.color-bright-magenta {
+	color: var(--colors-bright-magenta);
+}
+
+.color-bright-cyan {
+	color: var(--colors-bright-cyan);
+}
+
+/*
+	Background colors
+ */
+
+ /* Regular colors */
+
+.background-white {
+	background-color: var(--colors-white);
+	background-size: cover;
+}
+
+.background-black {
+	background-color: var(--colors-black);
+	background-size: cover;
+}
+
+.background-red {
+	background-color: var(--colors-red);
+	background-size: cover;
+}
+
+.background-green {
+	background-color: var(--colors-green);
+	background-size: cover;
+}
+
+.background-yellow {
+	background-color: var(--colors-yellow);
+	background-size: cover;
+}
+
+.background-blue {
+	background-color: var(--colors-blue);
+	background-size: cover;
+}
+
+.background-magenta {
+	background-color: var(--colors-magenta);
+	background-size: cover;
+}
+
+.background-cyan {
+	background-color: var(--colors-cyan);
+	background-size: cover;
+}
+
+/* Bright colors */
+
+.background-bright-white {
+	background-color: var(--colors-bright-white);
+	background-size: cover;
+}
+
+.background-bright-black {
+	background-color: var(--colors-bright-black);
+	background-size: cover;
+}
+
+.background-bright-red {
+	background-color: var(--colors-bright-red);
+	background-size: cover;
+}
+
+.background-bright-green {
+	background-color: var(--colors-bright-green);
+	background-size: cover;
+}
+
+.background-bright-yellow {
+	background-color: var(--colors-bright-yellow);
+	background-size: cover;
+}
+
+.background-bright-blue {
+	background-color: var(--colors-bright-blue);
+	background-size: cover;
+}
+
+.background-bright-magenta {
+	background-color: var(--colors-bright-magenta);
+	background-size: cover;
+}
+
+.background-bright-cyan {
+	background-color: var(--colors-bright-cyan);
+	background-size: cover;
+}
+
+/* Dark colors */
+
+.background-dark-white {
+	background-color: var(--colors-dark-white);
+	background-size: cover;
+}
+
+.background-dark-black {
+	background-color: var(--colors-dark-black);
+	background-size: cover;
+}
+
+.background-dark-red {
+	background-color: var(--colors-dark-red);
+	background-size: cover;
+}
+
+.background-dark-green {
+	background-color: var(--colors-dark-green);
+	background-size: cover;
+}
+
+.background-dark-yellow {
+	background-color: var(--colors-dark-yellow);
+	background-size: cover;
+}
+
+.background-dark-blue {
+	background-color: var(--colors-dark-blue);
+	background-size: cover;
+}
+
+.background-dark-magenta {
+	background-color: var(--colors-dark-magenta);
+	background-size: cover;
+}
+
+.background-dark-cyan {
+	background-color: var(--colors-dark-cyan);
+	background-size: cover;
+}

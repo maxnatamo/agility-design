@@ -1,0 +1,173 @@
+<!--
+   Simplicity Design made by Mads T. Kristiansen, 2019.
+  
+   This file is part of Simplicity Design.
+  
+   Simplicity Design is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published
+   by the Free Software Foundation; either version 2 of the License,
+   or (at your option) any later version.
+ 
+   Simplicity Design is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+ 
+   You should have received a copy of the GNU General Public License
+   along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Example 07 - Input</title>
+
+		<link rel="stylesheet" href="../css/simplicity-design.css">
+		<link rel="stylesheet" href="../css/skins/default.css">
+		<link rel="stylesheet" href="css/images.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/simplicity-design.js"></script>
+	</head>
+	<body>
+		<div class="title-container container">
+			<h1 class="title text-center">Example 07</h1>
+			<h4 class="subtitle text-center">Input</h4>
+		</div>
+		<div class="container">
+			<div class="container">
+				<h3>Checkbox Inputs</h3>
+				<input id="example-checkbox" class="switch-input" type="checkbox" name="example-checkbox">
+				<label class="switch-paddle" for="example-checkbox">
+					<div class="switch-knob"></div>
+				</label>
+			</div>
+
+			<div class="container">
+				<h2>Input</h2>
+				<h3>Radio Inputs</h3>
+
+				<div class="switch">
+					<input id="example-radio0" class="switch-input" type="radio" name="example-radio-group" checked>
+					<label class="switch-paddle" for="example-radio0">
+						<div class="switch-knob"></div>
+					</label>
+				</div>
+				<div class="switch">
+					<input id="example-radio1" class="switch-input" type="radio" name="example-radio-group">
+					<label class="switch-paddle" for="example-radio1">
+						<div class="switch-knob"></div>
+					</label>
+				</div>
+				<div class="switch">
+					<input id="example-radio2" class="switch-input" type="radio" name="example-radio-group">
+					<label class="switch-paddle" for="example-radio2">
+						<div class="switch-knob"></div>
+					</label>
+				</div>
+			</div>
+			<div class="container">
+				<h3>Text Inputs</h3>
+				<h4>Text Input Sizes</h4>
+				<div class="input-group auto small">
+					<div class="prefix">
+						<p class="content">Small</p>
+					</div>
+					<input type="text" class="input-field" placeholder="Input field">
+				</div>
+				<div class="input-group auto medium">
+					<div class="prefix">
+						<p class="content">Medium</p>
+					</div>
+					<input type="text" class="input-field" placeholder="Input field">
+				</div>
+				<div class="input-group auto large">
+					<div class="prefix">
+						<p class="content">Large</p>
+					</div>
+					<input type="text" class="input-field" placeholder="Input field">
+				</div>
+			</div>
+			<div class="container">
+				<h4>Text Inputs with Buttons</h4>
+				<div class="input-group">
+					<div class="prefix">
+						<p class="content">Medium</p>
+					</div>
+					<input type="text" class="input-field" placeholder="Input field">
+					<div class="suffix">
+						<p class="content">Medium</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="input-group">
+					<div class="prefix">
+						<p class="content">Buttons</p>
+					</div>
+					<input type="text" class="input-field" placeholder="Input field">
+					<div class="suffix">
+						<div class="btn-group">
+							<input type="button" class="btn btn-green" value="Accept">
+							<input type="button" class="btn btn-red" value="Deny">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="input-group">
+					<div class="prefix">
+						<div class="btn-group">
+							<input type="button" class="btn btn-outline-blue" value="Button">
+						</div>
+					</div>
+					<input type="text" class="input-field" placeholder="Input field">
+				</div>
+			</div>
+
+			<div class="container">
+				<h2>Alerts</h2>
+				<h3>Colored alerts</h3>
+				<div class="alert alert-white">
+					<strong>Alert!</strong> This is the default alert color.
+				</div>
+				<div class="alert alert-black">
+					<strong>Black!</strong> This is the black alert color.
+				</div>
+				<div class="alert alert-red">
+					<strong>Red!</strong> This is a red alert. This signals an error or danger.
+				</div>
+				<div class="alert alert-green">
+					<strong>Green!</strong> This is a green alert. This signals approval or safety.
+				</div>
+				<div class="alert alert-yellow">
+					<strong>Yellow!</strong> This is a yellow alert. This signals a warning or attention requirement.
+				</div>
+				<div class="alert alert-blue">
+					<strong>Blue!</strong> This is a blue alert. This signals an info message, that might need attention.
+				</div>
+				<div class="alert alert-magenta">
+					<strong>Magenta!</strong> This is a magenta alert.
+				</div>
+				<div class="alert alert-cyan">
+					<strong>Cyan!</strong> This is a cyan alert. This signals calmness.
+				</div>
+			</div>
+			<div class="container">
+				<h3>Closable alerts</h3>
+				<div class="alert alert-red closable">
+					<strong>Alert.</strong> This is a closable alert. Press the 'X'!
+					<button class="close" action="alert-close">&times;</button>
+				</div>
+				<div class="alert alert-red closable fade">
+					<strong>Alert.</strong> This is a closable alert. Press the 'X'!
+					<button class="close" action="alert-close">&times;</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

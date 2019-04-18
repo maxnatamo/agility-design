@@ -1,0 +1,205 @@
+/*
+ * Simplicity Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Simplicity Design.
+ *
+ * Simplicity Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Simplicity Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+	font-family: var(--main-font);
+	color: var(--default-text-color);
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 16px;
+
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none !important;
+	color: var(--colors-blue);
+}
+
+a:hover {
+	color: var(--colors-dark-blue);
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.subtext {
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1;
+	color: var(--subtext-foreground);
+}
+
+/* Headings, titles and displays */
+
+.title {
+	font-size: 42px;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	color: var(--title-foreground);
+}
+
+.subtitle {
+	color: var(--subtitle-foreground);
+
+	font-size: 32px;
+	line-height: 1.4;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: var(--heading1-foreground);
+}
+
+h1 {
+	font-size: 32px;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 0.18em;
+	margin-bottom: 0.4em;
+}
+
+h3 {
+	font-size: 24px;
+	margin-top: 0.18em;
+	margin-bottom: 0.4em;
+}
+
+h4 {
+	font-size: 22px;
+	margin-top: 0.14em;
+	margin-bottom: 0.3em;
+}
+
+h5 {
+	font-size: 18px;
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+
+h6 {
+	font-size: 16px;
+	margin-top: 0.1em;
+	margin-bottom: 0.25em;
+}
+
+@media (min-width: 992px) {
+	.title { font-size: 48px; }
+	.subtitle { font-size: 38px; }
+	h1 { font-size: 48px; }
+	h2 { font-size: 40px; }
+	h3 { font-size: 31px; }
+	h4 { font-size: 25px; }
+	h5 { font-size: 20px; }
+	h6 { font-size: 16px; }
+}
+
+.display1, .display2, .display3, .display4, .display5, .display6 {
+	font-weight: 550;
+}
+
+.display1, .display2 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.display3, .display4, .display5, .display6 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.display1 {
+	font-size: 82px;
+}
+
+.display2 {
+	font-size: 58px;
+}
+
+.display3 {
+	font-size: 46px;
+}
+
+.display4 {
+	font-size: 38px;
+}
+
+.display5 {
+	font-size: 30px;
+}
+
+.display6 {
+	font-size: 24px;
+}
+
+@media (max-width: 991px) {
+	.display1 { font-size: 48px; }
+	.display2 { font-size: 42px; }
+	.display3 { font-size: 38px; }
+	.display4 { font-size: 28px; }
+	.display5 { font-size: 22px; }
+	.display6 { font-size: 18px; }
+}
+
+/* Regular text weight */
+
+.text-extrathin {
+	font-weight: 200;
+}
+
+.text-thin {
+	font-weight: 300;
+}
+
+.text-regular {
+	font-weight: 400;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+/* Text alignment */
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
