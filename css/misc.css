@@ -1,20 +1,20 @@
 /*
- * Simplicity Design made by Mads T. Kristiansen, 2019.
+ * Agility Design made by Mads T. Kristiansen, 2019.
  *
- * This file is part of Simplicity Design.
+ * This file is part of Agility Design.
  *
- * Simplicity Design is free software; you can redistribute it and/or modify
+ * Agility Design is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published
  * by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
  *
- * Simplicity Design is distributed in the hope that it will be useful,
+ * Agility Design is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+ * along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
 */
 
 /*
@@ -180,46 +180,45 @@ li .notification {
 
 /* Notification colors */
 
-.notification.white {
+.notification-white {
 	background-color: var(--colors-white);
 	color: var(--colors-black);
 }
 
-.notification.black {
+.notification-black {
 	background-color: var(--colors-black);
 	color: var(--colors-white);
 }
 
-.notification.red {
+.notification-red {
 	background-color: var(--colors-red);
 	color: var(--colors-white);
 }
 
-.notification.green {
+.notification-green {
 	background-color: var(--colors-green);
 	color: var(--colors-white);
 }
 
-.notification.yellow {
+.notification-yellow {
 	background-color: var(--colors-yellow);
 	color: var(--colors-white);
 }
 
-.notification.blue {
+.notification-blue {
 	background-color: var(--colors-blue);
 	color: var(--colors-white);
 }
 
-.notification.magenta {
+.notification-magenta {
 	background-color: var(--colors-magenta);
 	color: var(--colors-white);
 }
 
-.notification.cyan {
+.notification-cyan {
 	background-color: var(--colors-cyan);
 	color: var(--colors-white);
 }
-
 /*
 	Alerts
  */
@@ -230,6 +229,10 @@ li .notification {
 	padding: 1em 1.5em;
 	border-radius: 0.5em;
 	margin: 1em;
+
+	border: 1px solid var(--colors-dark-white);
+	background-color: var(--colors-white);
+	color: var(--colors-dark-white);
 }
 
 .alert .close,

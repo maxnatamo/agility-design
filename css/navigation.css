@@ -1,20 +1,20 @@
 /*
- * Simplicity Design made by Mads T. Kristiansen, 2019.
+ * Agility Design made by Mads T. Kristiansen, 2019.
  *
- * This file is part of Simplicity Design.
+ * This file is part of Agility Design.
  *
- * Simplicity Design is free software; you can redistribute it and/or modify
+ * Agility Design is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published
  * by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
  *
- * Simplicity Design is distributed in the hope that it will be useful,
+ * Agility Design is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+ * along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
 */
 
 /*
@@ -79,57 +79,57 @@
 /* Navbar sizes */
 
 @media (min-width: 536px) {
-	.navbar.small:not(.vertical) {
+	.navbar-small:not(.vertical) {
 		display: flex;
 	}
 
-	.navbar.small:not(.auto):not(.vertical) .navbar-item {
+	.navbar-small:not(.auto):not(.vertical) .navbar-item {
 		flex: 0 0 auto;
 	}
 
-	.navbar.small:not(.auto):not(.vertical) a {
+	.navbar-small:not(.auto):not(.vertical) a {
 		display: flex;
 	}
 }
 
 @media (min-width: 766px) {
-	.navbar.medium:not(.vertical) {
+	.navbar-medium:not(.vertical) {
 		display: flex;
 	}
 
-	.navbar.medium:not(.auto):not(.vertical) .navbar-item {
+	.navbar-medium:not(.auto):not(.vertical) .navbar-item {
 		flex: 0 0 auto;
 	}
 
-	.navbar.medium:not(.auto):not(.vertical) a {
+	.navbar-medium:not(.auto):not(.vertical) a {
 		display: flex;
 	}
 }
 
 @media (min-width: 992px) {
-	.navbar.large:not(.vertical) {
+	.navbar-large:not(.vertical) {
 		display: flex;
 	}
 
-	.navbar.large:not(.auto):not(.vertical) .navbar-item {
+	.navbar-large:not(.auto):not(.vertical) .navbar-item {
 		flex: 0 0 auto;
 	}
 
-	.navbar.large:not(.auto):not(.vertical) a {
+	.navbar-large:not(.auto):not(.vertical) a {
 		display: flex;
 	}
 }
 
 @media (min-width: 1200px) {
-	.navbar.mega:not(.vertical) {
+	.navbar-mega:not(.vertical) {
 		display: flex;
 	}
 
-	.navbar.mega:not(.auto):not(.vertical) .navbar-item {
+	.navbar-mega:not(.auto):not(.vertical) .navbar-item {
 		flex: 0 0 auto;
 	}
 
-	.navbar.mega:not(.auto):not(.vertical) a {
+	.navbar-mega:not(.auto):not(.vertical) a {
 		display: flex;
 	}
 }

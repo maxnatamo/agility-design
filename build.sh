@@ -1,5 +1,5 @@
 #!/bin/sh
 
-lessc less/simplicity-design.less \
+lessc less/agility-design.less \
 	      --clean-css="--s1 --advanced --compatibility=ie8" \
-	      css/simplicity-design.min.css
+	      css/agility-design.min.css

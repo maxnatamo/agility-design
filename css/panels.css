@@ -1,20 +1,20 @@
 /*
- * Simplicity Design made by Mads T. Kristiansen, 2019.
+ * Agility Design made by Mads T. Kristiansen, 2019.
  *
- * This file is part of Simplicity Design.
+ * This file is part of Agility Design.
  *
- * Simplicity Design is free software; you can redistribute it and/or modify
+ * Agility Design is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published
  * by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
  *
- * Simplicity Design is distributed in the hope that it will be useful,
+ * Agility Design is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Simplicity Design. If not, see <http://www.gnu.org/licenses/>.
+ * along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
 */
 
 /*
@@ -46,7 +46,7 @@
 }
 
 .panel-clear .panel-header {
-	width: 50%;
+	min-width: 50%;
 }
 
 /*
@@ -209,11 +209,15 @@ div.menu a {
 	padding: 0.5em 1em;
 }
 
+div.menu-auto > * {
+	flex: 1 1 auto;
+}
+
 div.menu-left {
 	float: left;
 }
 
-div.menu-center {
+div.menu-center:not(.menu-auto) {
 	margin-left: auto;
 	margin-right: auto;
 	display: table;
@@ -357,27 +361,27 @@ table th {
 	background-color: var(--default-page-background);
 }
 
-table.stack thead,
-table.stack tr,
-table.stack tr td {
+table thead,
+table tr,
+table tr td {
 	display: block;
 }
 
-table.stack thead tr {
+table thead tr {
 	display: none;
 }
 
 @media (min-width: 766px) {
-	table.stack tr,
-	table.stack thead tr {
+	table tr,
+	table thead tr {
 		display: table-row;
 	}
 
-	table.stack tr td {
+	table tr td {
 		display: table-cell;
 	}
 
-	table.stack thead {
+	table thead {
 		display: table-header-group;
 	}
 }
@@ -408,11 +412,11 @@ table caption {
 
 /* Table styles */
 
-table.stripped tr:nth-child(even) {
+table.striped tr:nth-child(even) {
 	background-color: var(--default-page-background);
 }
 
-table.stripped tr:nth-child(odd) {
+table.striped tr:nth-child(odd) {
 	background-color: var(--colors-bright-white);
 }
 
