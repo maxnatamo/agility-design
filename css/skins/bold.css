@@ -57,6 +57,7 @@
         Code formatting
      */
 
+    --code-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --code-background-even: var(--panel-default-background);
     --code-background-odd: #f0f0f0;
     --code-border: #bcbcbc;
@@ -117,7 +118,7 @@
 
 p {
     line-height: 1.75;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 p, span {
@@ -163,6 +164,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .btn-white:hover {
+    background-color: var(--colors-white);
+}
+
+.btn-outline-black {
     background-color: var(--colors-white);
 }
 
@@ -224,6 +229,7 @@ p.navbar-item {
 table tr td,
 table tr th,
 table caption,
-ul.list-group li.list-item {
+ul.list-group li.list-item,
+.menu a {
     text-transform: uppercase;
 }
