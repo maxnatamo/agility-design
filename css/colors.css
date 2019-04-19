@@ -89,6 +89,40 @@
 	color: var(--colors-bright-cyan);
 }
 
+/* Dark colors */
+
+.color-dark-white {
+	color: var(--colors-dark-white);
+}
+
+.color-dark-black {
+	color: var(--colors-dark-black);
+}
+
+.color-dark-red {
+	color: var(--colors-dark-red);
+}
+
+.color-dark-green {
+	color: var(--colors-dark-green);
+}
+
+.color-dark-yellow {
+	color: var(--colors-dark-yellow);
+}
+
+.color-dark-blue {
+	color: var(--colors-dark-blue);
+}
+
+.color-dark-magenta {
+	color: var(--colors-dark-magenta);
+}
+
+.color-dark-cyan {
+	color: var(--colors-dark-cyan);
+}
+
 /*
 	Background colors
  */
