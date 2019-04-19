@@ -169,15 +169,11 @@ input[type="text"].cyan:focus,
 	margin-left: 2px;
 }
 
-.input-group .prefix :not(.btn-group),
-.input-group .suffix :not(.btn-group) {
+.input-group .prefix :not(.btn-group):not(.btn),
+.input-group .suffix :not(.btn-group):not(.btn) {
 	font-size: inherit;
 	padding: 0.375em 1em;
 	vertical-align: middle;
-}
-
-.input-group input[type="text"] {
-	padding: 0;
 }
 
 .input-group .prefix:not(:first-child),
@@ -188,10 +184,10 @@ input[type="text"].cyan:focus,
 }
 
 .input-group *:first-child {
-	border-radius: 3px 0px 3px 0px;
+	border-radius: 3px 0px 0px 3px;
 }
 
-.input-group *:last-child,
+.input-group :last-child:not(:first-child),
 .input-group *:last-child .btn-group input.btn:last-child {
 	border-radius: 0px 3px 3px 0px;
 	margin-top: 0;
