@@ -80,6 +80,17 @@
 .icon-not-almost-equal::after    { content: "\2249" }
 .icon-almost-or-equal::after    { content: "\224a" }
 .icon-not-almost-or-equal::after    { content: "\2247" }
+.icon-logical-and::after     { content: "\2227" }
+.icon-logical-or::after     { content: "\2228" }
+.icon-circled-plus::after    { content: "\2295" }
+.icon-circled-minus::after    { content: "\2296" }
+.icon-circled-multiplication::after    { content: "\2297" }
+.icon-circled-division::after    { content: "\2298" }
+.icon-circled-dot::after    { content: "\2299" }
+.icon-circled-ring::after    { content: "\229a" }
+.icon-circled-asterisk::after    { content: "\229b" }
+.icon-circled-equals::after    { content: "\229c" }
+.icon-circled-dash::after    { content: "\229d" }
 
 /*
     Punctuation
@@ -89,3 +100,4 @@
 .icon-trademark::after    { content: "\00ae" }
 .icon-trade-mark::after    { content: "\2122" }
 .icon-paragraph::after    { content: "\00b6" }
+.icon-start::after    { content: "\22c6" }
