@@ -69,46 +69,16 @@ p:last-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	color: var(--heading1-foreground);
-}
-
-h1 {
-	font-size: 32px;
-	margin-top: 0.2em;
+	margin-top: 0.25em;
 	margin-bottom: 0.5em;
 }
 
-h2 {
-	font-size: 28px;
-	margin-top: 0.18em;
-	margin-bottom: 0.4em;
-}
-
-h3 {
-	font-size: 24px;
-	margin-top: 0.18em;
-	margin-bottom: 0.4em;
-}
-
-h4 {
-	font-size: 22px;
-	margin-top: 0.14em;
-	margin-bottom: 0.3em;
-}
-
-h5 {
-	font-size: 18px;
-	margin-top: 0.1em;
-	margin-bottom: 0.3em;
-}
-
-h6 {
-	font-size: 16px;
-	margin-top: 0.1em;
-	margin-bottom: 0.25em;
-}
+h1 { font-size: 32px; color: var(--heading1-foreground); }
+h2 { font-size: 28px; color: var(--heading2-foreground); }
+h3 { font-size: 24px; color: var(--heading3-foreground); }
+h4 { font-size: 22px; color: var(--heading4-foreground); }
+h5 { font-size: 18px; color: var(--heading5-foreground); }
+h6 { font-size: 16px; color: var(--heading6-foreground); }
 
 div[class *= "grid-"] h1, div.panel h1,
 div[class *= "grid-"] h2, div.panel h2,
@@ -119,7 +89,6 @@ div[class *= "grid-"] h6, div.panel h6 {
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
 }
-
 
 @media (min-width: 992px) {
 	.title { font-size: 48px; }
@@ -213,4 +182,40 @@ div[class *= "grid-"] h6, div.panel h6 {
 
 .text-justify {
 	text-align: justify;
+}
+
+/* Text size */
+
+.text-tiny {
+	font-size: 0.75rem;
+}
+
+.text-small {
+	font-size: 1rem;
+}
+
+.text-medium {
+	font-size: 1.25rem;
+}
+
+.text-large {
+	font-size: 1.75rem;
+}
+
+.text-mega {
+	font-size: 2.5rem;
+}
+
+/* Text format */
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
 }

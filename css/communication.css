@@ -17,6 +17,10 @@
  * along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
 */
 
+/*
+	Billboard
+ */
+
 .billboard {
 	width: 100%;
 	padding: 1em;
@@ -41,6 +45,10 @@
 		padding: 5em;
 	}
 }
+
+/*
+	Communication Blocks
+ */
 
 .communication-content-small,
 .communication-content-medium,
