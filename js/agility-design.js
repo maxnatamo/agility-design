@@ -19,14 +19,17 @@ $(document).ready(function() {
     $("div[class *= 'animate-fade-from-bottom']").css( "top",    0 );
 
     // Animation groups
-    $("div.animation-group").children().each((i, v) => {
+    $(".animation-group").children().each((i, v) => {
         // Only accept elements with a .animate-* class.
         if(~$(v).attr("class").indexOf("animate-")) {
             $(v).css({
-                "transition-delay":
+                "animation-delay":
                 ( parseFloat( $(v).parent().attr("data-delay-initial") )
                 + parseFloat( $(v).parent().attr("data-delay-incremental") ) * i )
-                + "s"
+                + "s",
+                "animation-duration": (typeof $(v).parent().attr("data-duration") != "undefined") ?
+                $(v).parent().attr("data-duration") + "s" :
+                "0.25s"
             });
         }
     });
