@@ -22,38 +22,15 @@
  */
 
 .code-field {
+	font-family: var(--code-font);
+	font-weight: 300;
 	background-color: var(--code-background);
 	border: 1px solid var(--code-border);
 	border-radius: 3px;
 	
 	margin-bottom: 0em;
-	padding-left: 1em;
-}
-
-.code-field > code {
-	background-color: var(--code-background);
-	font-family: Consolas, Courier New, sans-serif;
-	font-size: 12px;
-}
-
-.code-field > code span {
-	width: 100%;
-}
-
-.code-field > code span:nth-child(even) {
-	background-color: var(--code-background-even);
-	display: inline-block;
-	background-size: cover;
-}
-
-.code-field > code span:nth-child(odd) {
-	background-color: var(--code-background-odd);
-	display: inline-block;
-	background-size: cover;
-}
-
-.panel-clear .code-field > code span:nth-child(even) {
-	background-color: var(--default-page-background);
+	padding: 1.5em;
+	font-size: 0.8em;
 }
 
 /*
