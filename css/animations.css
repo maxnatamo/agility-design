@@ -94,7 +94,7 @@
     animation-fill-mode: both;
 }
 
-.fade-in-on-load {
+.fade-out-on-load {
     opacity: 1;
     animation: fade-out 0.15s linear;
     animation-fill-mode: both;

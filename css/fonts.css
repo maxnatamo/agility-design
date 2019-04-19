@@ -110,6 +110,17 @@ h6 {
 	margin-bottom: 0.25em;
 }
 
+div[class *= "grid-"] h1, div.panel h1,
+div[class *= "grid-"] h2, div.panel h2,
+div[class *= "grid-"] h3, div.panel h3,
+div[class *= "grid-"] h4, div.panel h4,
+div[class *= "grid-"] h5, div.panel h5,
+div[class *= "grid-"] h6, div.panel h6 {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+
 @media (min-width: 992px) {
 	.title { font-size: 48px; }
 	.subtitle { font-size: 38px; }
