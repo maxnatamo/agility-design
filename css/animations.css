@@ -69,6 +69,17 @@
 .animate-fade-from-right  { left:   4em; }
 .animate-fade-from-bottom { top:    4em; }
 
+/* Page Fades */
+
+body.fade-on-leave {
+    transition: opacity;
+}
+
+body.fade-on-load {
+    transition: opacity;
+    opacity: 0;
+}
+
 /* Gradients */
 
 .gradient {

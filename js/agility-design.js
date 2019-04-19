@@ -50,4 +50,21 @@ $(document).ready(function() {
             $("div." + $(t).attr("tooltip")).remove();
         }, parseFloat( $("div." + $(this).attr("tooltip")).css("transition-duration") ) * 1000);
     });
+
+    // Page Fades
+    $("body.fade-on-leave").css("transition-duration", $("body.fade-on-leave").attr("fade-duration") + "s");
+    $("body.fade-on-load").css({
+        "transition-duration": $("body.fade-on-load").attr("fade-duration") + "s",
+        "opacity": 1
+    });
+
+    $("body.fade-on-leave a").click(function(e) {
+        const t = this;
+        e.preventDefault();
+        $("body.fade-on-leave").css("opacity", 0);
+        setTimeout(function(){
+            window.location.href = $(t).attr("href");
+        },
+        parseFloat( $("body.fade-on-leave").css("transition-duration") ) * 1000);
+    });
 });
