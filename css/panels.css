@@ -22,7 +22,7 @@
  */
 
 .panel {
-	padding: 0em 1em 1em;
+	padding: 0;
 	border-radius: 6px;
 	border: 1px solid var(--panel-default-border);
 	background-color: var(--panel-default-background);
@@ -31,8 +31,6 @@
 .panel-header {
 	color: var(--panel-header-foreground);
 	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid var(--panel-header-underline);
 }
 
 .panel-body {
@@ -200,37 +198,6 @@ ul.list-group-clear-magenta li.list-item.active {
 
 ul.list-group-clear-cyan li.list-item.active {
 	color: var(--colors-cyan);
-}
-
-/*
-	Navbar Menu
- */
-
-div.menu {
-	display: flex;
-}
-
-div.menu a {
-	text-decoration: none !important;
-	padding: 0.5em 1em;
-}
-
-div.menu-auto > * {
-	flex: 1 1 auto;
-}
-
-div.menu-left {
-	float: left;
-}
-
-div.menu-center:not(.menu-auto) {
-	margin-left: auto;
-	margin-right: auto;
-	display: table;
-}
-
-div.menu-right {
-	float: right;
 }
 
 /* Colors */
