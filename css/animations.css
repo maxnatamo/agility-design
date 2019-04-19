@@ -21,6 +21,36 @@
     Animation keyframes
  */
 
+@keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-from-left {
+    from { right: 4em; opacity: 0; }
+    to   { right: 0em; opacity: 1; }
+}
+
+@keyframes fade-from-top {
+    0%   { bottom: 4em; }
+    100% { bottom: 0em; }
+}
+
+@keyframes fade-from-right {
+    0%   { left: 4em; }
+    100% { left: 0em; }
+}
+
+@keyframes fade-from-bottom {
+    0%   { top: 4em; }
+    100% { top: 0em; }
+}
+
 @keyframes loading-spin-static {
     to  { transform: rotate(360deg); }
 }
@@ -58,16 +88,38 @@
     transition: opacity 0.15s linear;
 }
 
-[class *= "animate-fade-from-"] {
+.fade-in-on-load {
+    opacity: 0;
+    animation: fade-in 0.15s linear;
+    animation-fill-mode: both;
+}
+
+.fade-in-on-load {
+    opacity: 1;
+    animation: fade-out 0.15s linear;
+    animation-fill-mode: both;
+}
+
+.animation-group [class *= "animate-fade-from-"] {
     position: relative;
     opacity: 0;
     transition: opacity 0.5s, right 0.5s, bottom 0.5s, left, 0.5s, top 0.5s;
 }
 
-.animate-fade-from-left   { right:  4em; }
-.animate-fade-from-top    { bottom: 4em; }
-.animate-fade-from-right  { left:   4em; }
-.animate-fade-from-bottom { top:    4em; }
+*:not(.animation-group) [class *= "fade-from-"] {
+    position: relative;
+    opacity: 0;
+}
+
+.animate-fade-from-left, .fade-from-left-on-load     { right:  4em; }
+.animate-fade-from-top, .fade-from-top-on-load       { bottom: 4em; }
+.animate-fade-from-right, .fade-from-right-on-load   { left:   4em; }
+.animate-fade-from-bottom, .fade-from-bottom-on-load { top:    4em; }
+
+*:not(.animation-group) [class *= "fade-from-left-on-load"]   { animation: fade-from-left   0.25s linear 0s 1 normal both; }
+*:not(.animation-group) [class *= "fade-from-top-on-load"]    { animation: fade-from-top    0.25s linear 0s 1 normal both; }
+*:not(.animation-group) [class *= "fade-from-right-on-load"]  { animation: fade-from-right  0.25s linear 0s 1 normal both; }
+*:not(.animation-group) [class *= "fade-from-bottom-on-load"] { animation: fade-from-bottom 0.25s linear 0s 1 normal both; }
 
 /* Page Fades */
 
