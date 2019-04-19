@@ -1,3 +1,7 @@
+<p align="center"><img src="https://i.imgur.com/hmOiyaX.png" width="60%" align="center"></p>
+
+<p align="center">'BOLD'-example, made with Agility Design.<br>Source code can be found <a href="https://github.com/madstk1/agility-design/tree/master/made-with-agility/bold">here.</a></p>
+
 # Agility Design
 Agility Design is a mobile-first HTML, CSS, and JavaScript framework to create themed websites. While it is influenced by Bootstrap 4 and Foundation, it also combines different aspects into a more uniform framework.
 
@@ -9,10 +13,17 @@ To start using Agility Design, simply link the `.css`-file to your `.html`-file.
 <link rel="stylesheet" href="https://raw.githubusercontent.com/madstk1/agility-design/master/css/simplicity-design.min.css">
 ```
   
-To add a skin, link the skin-in-questions's `.css`-file to your `.html`-file, as well.
+To add a skin, link the skin-in-questions's `.css`-file to your `.html`-file, as well. All the available skins can be found in the `css/skins/`-folder.
 
 ```
 <link rel="stylesheet" href="https://raw.githubusercontent.com/madstk1/agility-design/master/css/skins/default.css">
+```
+
+For more advanced features, like animation-groups or closable alerts, the included JS file and a modern version of jQuery must be linked.
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/madstk1/agility-design/master/js/agility-design.js"></script>
 ```
 
 ## Building
