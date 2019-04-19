@@ -1,0 +1,229 @@
+/*
+ * Agility Design made by Mads T. Kristiansen, 2019.
+ *
+ * This file is part of Agility Design.
+ *
+ * Agility Design is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ *
+ * Agility Design is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* CSS Imports */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
+
+:root {
+    /*
+        Basics
+     */
+
+    --main-font: 'Montserrat', sans-serif;
+    --default-text-color: var(--heading1-foreground);
+    --subtext-foreground: var(--heading4-foreground);
+    --default-page-background: #fff;
+
+    /*
+        Titles and headings
+     */
+	--title-foreground: var(--default-text-color);
+    --subtitle-foreground: var(--subtext-foreground);
+    
+    --heading1-foreground: #3b3b3b;
+    --heading2-foreground: #414141;
+    --heading3-foreground: #505050;
+    --heading4-foreground: #5c5c5c;
+    --heading5-foreground: #666666;
+    --heading6-foreground: #747474;
+
+    /*
+        Backgrounds and panels
+     */
+    
+    --panel-default-background: #f2f2f2;
+    --panel-default-border: #b3b3b3;
+    --panel-header-foreground: #3e3e3e;
+    --panel-header-underline: var(--panel-default-border);
+    --panel-body-foreground: #535353;
+
+    /*
+        Code formatting
+     */
+
+    --code-background-even: var(--panel-default-background);
+    --code-background-odd: #f0f0f0;
+    --code-border: #bcbcbc;
+
+    /*
+         Images
+     */
+
+    --image-comment-foreground: var(--panel-default-border);
+
+    /*
+         Input
+     */
+
+   --unchecked-checkbox-background: #cacaca;
+   --checked-checkbox-background: #303030;
+
+    /*
+         Colors
+     */
+   --colors-white: #f6f6f6;
+   --colors-black: #373b41;
+   --colors-red: #ef978b;
+   --colors-green: #95d1a9;
+   --colors-yellow: #f7ca88;
+   --colors-blue: #1da1f2;
+   --colors-magenta: #c9a0ca;
+   --colors-cyan: #71cecd;
+   
+   --colors-bright-white: #fcfcfc;
+   --colors-bright-black: #cdd1d6;
+   --colors-bright-red: #f5aca3;
+   --colors-bright-green: #b8e4c7;
+   --colors-bright-yellow: #f8dcb2;
+   --colors-bright-blue: #9acdec;
+   --colors-bright-magenta: #e7cde7;
+   --colors-bright-cyan: #a3e9e8;
+
+   --colors-dark-white: #747474;
+   --colors-dark-black: #111316;
+   --colors-dark-red: #b14f43;
+   --colors-dark-green: #4c9665;
+   --colors-dark-yellow: #966e32;
+   --colors-dark-blue: #216fa0;
+   --colors-dark-magenta: #79447a;
+   --colors-dark-cyan: #297271;
+}
+
+/*
+    Custom Properties
+ */
+
+/* Basics */
+
+* {
+    border-radius: 0px !important;
+}
+
+p {
+    line-height: 1.75;
+    font-weight: 200;
+}
+
+p, span {
+    color: var(--colors-dark-white);
+}
+
+/* Text weight */
+
+.text-extrathin {
+	font-weight: 200;
+}
+
+.text-thin {
+	font-weight: 300;
+}
+
+.text-regular {
+	font-weight: 400;
+}
+
+.text-bold {
+	font-weight: 500;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6,
+.display1, .display2, .display3, .display4, .display5, .display6 {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.btn {
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+}
+
+.btn-white {
+    background-color: transparent;
+    border: 1px solid var(--colors-white);
+}
+
+.btn-white:hover {
+    background-color: var(--colors-white);
+}
+
+/* Input */
+
+.slider input[type="range"]::-webkit-slider-thumb,
+.slider input[type="range"]::-moz-range-thumb {
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	border: 1px solid gray !important;
+	border-radius: 0px !important;
+}
+
+.slider-round input[type="range"]::-webkit-slider-thumb,
+.slider-round input[type="range"]::-moz-range-thumb {
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	border-radius: 50% !important;
+}
+
+.switch-paddle {
+    transform: translateY(0.6em);
+    height: 0.25em;
+    padding-left: 0em;
+    padding-top: 0.125em;
+}
+
+.switch-paddle .switch-knob {
+    transform: translateY(-0.6em);
+    border: 1px solid var(--colors-dark-white);
+    border-radius: 50% !important;
+}
+
+input[type="checkbox"]:checked ~ .switch-paddle .switch-knob,
+input[type="radio"]:checked ~ .switch-paddle .switch-knob {
+	margin-left: calc(3em - 1.2em);
+}
+
+.input-group .prefix,
+.input-group .suffix {
+    background-color: transparent;
+}
+
+/* Navigation */
+
+p.navbar-item {
+    color: var(--colors-white) !important;
+}
+
+/* Alerts */
+
+.alert-white {
+    background-color: transparent;
+}
+
+/* Misc */
+
+.alert,
+table tr td,
+table tr th,
+table caption,
+ul.list-group li.list-item {
+    text-transform: uppercase;
+}
