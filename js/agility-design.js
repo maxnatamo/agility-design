@@ -30,13 +30,24 @@ $(document).ready(function() {
             });
         }
     });
-});
 
-$(window).scroll({ previousTop: 0 }, function () {
-    if ($(window).scrollTop() < this.previousTop) {
-        $(".navigation-arrows").show();
-    } else {
-        $(".navigation-arrows").hide();
-    }
-    this.previousTop = $(window).scrollTop();
+    // Tooltips
+    $("a[tooltip]").hover(function() {
+        const top = $(this).position().top + 20;
+        const left = $(this).position().left;
+        const id = Math.random().toString(36).substring(5);
+
+        $("body").append('<div class="tooltip tooltip-' + id + '" style="top: ' + top + 'px; left: ' + left + 'px"><strong>' + $(this).attr("message") + '</strong></div>');
+        $(this).attr("tooltip", "tooltip-" + id );
+        setTimeout(function() {
+            $("div.tooltip-" + id).css("opacity", 0.9);
+        }, 10);
+    }, function() {
+        const t = this;
+        $("div." + $(this).attr("tooltip")).css("opacity", 0);
+
+        setTimeout(function() {
+            $("div." + $(t).attr("tooltip")).remove();
+        }, parseFloat( $("div." + $(this).attr("tooltip")).css("transition-duration") ) * 1000);
+    });
 });
