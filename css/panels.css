@@ -38,6 +38,11 @@
 	color: var(--panel-body-foreground);
 }
 
+.panel-image {
+	max-width: 100%;
+	height: auto;
+}
+
 .panel-clear {
 	background-color: var(--panel-page-background);
 	border-width: 0px;
