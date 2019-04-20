@@ -26,77 +26,165 @@
 		<title>Table of Contents - Agility Design</title>
 
 		<link rel="stylesheet" type="text/css" href="css/agility-design.css" />
-		<link rel="stylesheet" type="text/css" href="css/skins/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/skins/bold.css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/agility-design.js"></script>
 
 		<style>
-			.container:not(.title-container) {
-				margin: 1em auto 1em auto;
+			.panel-container {
+				padding: 1em;
 			}
 
-			.title-container {
-				display: inline;
+			.panel-container h6 {
+				transition: color 0.2s;
+			}
+
+			.panel-container:hover h6 {
+				color: var(--colors-black);
+			}
+
+			.panel-image {
+				border: 1px solid var(--colors-bright-black);
 			}
 		</style>
 	</head>
-	<body class="fade-on-leave fade-on-load" fade-duration="0.25">
+	<body class="fade-on-leave fade-on-load" fade-duration="1">
 		<div class="title-container container">
-			<h1 class="title text-center">Table of Contents</h1>
-			<h4 class="subtitle text-center">Agility Design</h4>
+			<h6 class="title text-center">Table of Contents</h6>
+			<h6 class="subtitle text-center">Agility Design</h6>
 		</div>
-		<div class="container animation-group" data-delay-initial="0.2" data-delay-incremental="0.4">
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-black horizontal auto text-center">
-					<a href="examples/01-grids.html"><li class="list-item active">01 - Grids</li></a>
-				</ul>
+		<div class="container">
+		<div class="container animation-group" data-delay-initial="0.6" data-delay-incremental="0.4">
+			<div class="grid grid-medium grid-align-center text-center animate-fade-in">
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/01-grids.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Grids">
+									<h6>01 - Grids</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/02-images.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Images">
+									<h6>02 - Images</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/03-platfoms.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Platforms">
+									<h6>03 - Platforms</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-black horizontal auto text-center">
-					<a href="examples/02-images.html"><li class="list-item active">02 - Images</li></a>
-				</ul>
+			<div class="grid grid-medium grid-align-center text-center animate-fade-in">
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/04-communication.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Communication">
+									<h6>04 - Communication</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/05-buttons.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Buttons">
+									<h6>05 - Buttons</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/06-input.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Input">
+									<h6>06 - Input</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-blue horizontal auto text-center">
-					<a href="examples/03-platfoms.html"><li class="list-item active">03 - Platforms</li></a>
-				</ul>
+			<div class="grid grid-medium grid-align-center text-center animate-fade-in">
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/07-panels.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Panels">
+									<h6>07 - Panels</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/08-tables.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Tables">
+									<h6>08 - Tables</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/09-notifications.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Notifications">
+									<h6>09 - Notifications</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-blue horizontal auto text-center">
-					<a href="examples/04-communication.html"><li class="list-item active">04 - Communication</li></a>
-				</ul>
-			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-yellow horizontal auto text-center">
-					<a href="examples/05-buttons.html"><li class="list-item active">05 - Buttons</li></a>
-				</ul>
-			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-yellow horizontal auto text-center">
-					<a href="examples/06-input.html"><li class="list-item active">06 - Input</li></a>
-				</ul>
-			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-red horizontal auto text-center">
-					<a href="examples/07-panels.html"><li class="list-item active">07 - Panels</li></a>
-				</ul>
-			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-red horizontal auto text-center">
-					<a href="examples/08-tables.html"><li class="list-item active">08 - Tables</li></a>
-				</ul>
-			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-white horizontal auto text-center">
-					<a href="examples/09-notifications.html"><li class="list-item active">09 - Notifications</li></a>
-				</ul>
-			</div>
-			<div class="container animate-fade-from-left">
-				<ul class="list-group list-group-white horizontal auto text-center">
-					<a href="examples/10-navigation.html"><li class="list-item active">10 - Navigation</li></a>
-				</ul>
+			<div class="grid grid-medium grid-align-center text-center animate-fade-in">
+				<div class="col-4">
+					<div class="panel-container">
+						<a href="examples/10-navigation.html">
+							<div class="panel panel-clear">
+								<div class="panel-body">
+									<img class="panel-image" src="https://via.placeholder.com/150/FFFFFF/808080?text=Navigation">
+									<h6>10 - Navigation</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
 	</body>
 </html>
