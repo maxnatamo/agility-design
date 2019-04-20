@@ -51,7 +51,7 @@ $ ./build.sh
 If you do not want to use the Clean-CSS library, building will still be possible, but with a potential performance penalty. To build without Clean-CSS, run the following command inside the root of the project.
 
 ```
-$ lessc less/agility-design.less css/agility-design.min.css
+$ ./build.sh --without-cleancss
 ```
 
 ## Usage
