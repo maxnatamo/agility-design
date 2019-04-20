@@ -71,6 +71,24 @@ div.menu-fixed {
 	}
 }
 
+/* 
+	Navigation Arrows
+ */
+
+.navigation-arrow {
+	position: fixed;
+	top: 0;
+	width: 2em;
+	font-size: 1.7em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.navigation-arrow.left         { left: 0; }
+.navigation-arrow.right        { right: 0; }
+.navigation-arrow.left::after  { content: "<"; }
+.navigation-arrow.right::after { content: ">"; }
+
 /*
 	Navbar
  */
