@@ -115,6 +115,8 @@
 .animate-fade-from-top,    .fade-from-top-on-load    { animation: fade-from-top    0.25s ease-out 0s 1 normal both; }
 .animate-fade-from-right,  .fade-from-right-on-load  { animation: fade-from-right  0.25s ease-out 0s 1 normal both; }
 .animate-fade-from-bottom, .fade-from-bottom-on-load { animation: fade-from-bottom 0.25s ease-out 0s 1 normal both; }
+.animate-fade-in   { animation: fade-in   0.25s ease-out 0s 1 normal both; }
+.animate-fade-out  { animation: fade-out  0.25s ease-out 0s 1 normal both; }
 
 /* Page Fades */
 
