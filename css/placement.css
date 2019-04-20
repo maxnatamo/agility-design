@@ -80,6 +80,14 @@
     }
 }
 
+/* Display */
+
+.display-block   { display: block;  }
+.display-inline  { display: inline; }
+.display-table   { display: table;  }
+.display-flex    { display: flex;   }
+.display-none    { display: none;   }
+
 /* Floating */
 
 .left {

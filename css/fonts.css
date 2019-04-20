@@ -33,6 +33,7 @@ p {
 a {
 	text-decoration: none !important;
 	color: var(--colors-blue);
+	transition: all 0.15s;
 }
 
 a:hover {
