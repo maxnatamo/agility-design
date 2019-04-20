@@ -1,0 +1,180 @@
+<!--
+   Agility Design made by Mads T. Kristiansen, 2019.
+  
+   This file is part of Agility Design.
+  
+   Agility Design is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published
+   by the Free Software Foundation; either version 2 of the License,
+   or (at your option) any later version.
+ 
+   Agility Design is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+ 
+   You should have received a copy of the GNU General Public License
+   along with Agility Design. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Colorful, by Agility Design</title>
+
+        <!-- Agility Design, with 'Material'-skin. -->
+		<link rel="stylesheet" type="text/css" href="../../css/agility-design.css" />
+        <link rel="stylesheet" href="../../css/skins/material.css">
+
+        <!-- Font Awesome 5 for icons. -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../../js/agility-design.js"></script>
+
+        <style>
+            .background-color {
+                background-color: var(--colors-red);
+                background-size: cover;
+                width: 100%;
+                height: 70%;
+                overflow-y: hidden;
+            }
+
+            .cover-image {
+                position: relative;
+                width: 30rem;
+                top: 24rem;
+                margin-left: calc((100% - 30rem) / 2);
+            }
+
+            div[class *= "col-"] p,
+            div[class *= "col-"] i {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .btn {
+                white-space: nowrap;
+            }
+
+            i.display-icon {
+                display: table;
+                color: var(--colors-red);
+                font-size: 6rem;
+                margin-bottom: 1rem;
+            }
+
+            a:hover {
+                color: var(--colors-dark-red);
+            }
+
+            div.grid div.info-fields {
+                margin-top: 5rem;
+            }
+
+            div.grid div.info-fields:last-child {
+                margin-bottom: 5rem;
+            }
+
+            div.grid-medium p {
+                padding-top: 2rem;
+            }
+
+            @media (max-width: 776px) {
+                div.grid-medium p {
+                    padding-left: 8rem;
+                    padding-right: 8rem;
+                }
+            }
+
+            @media (min-width: 65rem) {
+                .cover-image {
+                    width: 60rem;
+                    top: 14rem;
+                    margin-left: calc((100% - 60rem) / 2);
+                }
+
+                div[class *= "col-"] p,
+                div[class *= "col-"] i {
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
+
+                div.grid div.info-fields {
+                    margin-top: 0rem;
+                }
+            }
+        </style>
+	</head>
+	<body>
+        <div class="menu menu-center menu-fixed background-red fade-in-on-load" style="padding: 1em;">
+            <a class="text-small text-uppercase color-white" href="https://madstk1.github.io/agility-design/">Home</a>
+            <a class="text-small text-uppercase color-white" href="https://github.com/madstk1/agility-design/wiki/Getting-Started">Getting Started</a>
+            <a class="text-small text-uppercase color-white" href="https://github.com/madstk1/agility-design/wiki/Building">Building</a>
+            <a class="text-small text-uppercase color-white" href="https://github.com/madstk1/agility-design/wiki/Usage">Usage</a>
+        </div>
+
+        <div class="background-color animation-group" data-delay-initial="0.3" data-delay-incremental="0" data-duration="0.5">
+            <div class="animate-fade-from-top">
+                <img src="img/cover.png" class="cover-image">
+            </div>
+        </div>
+
+        <div class="container animation-group" style="margin-top: 4em;" data-delay-initial="0.7" data-delay-incremental="0.4" data-duration="0.5">
+            <h1 class="animate-fade-in text-thin text-center">
+                Colorful
+            </h1>
+            <p class="animate-fade-in text-extrathin text-medium text-center">
+                A modern, materialistic website template, made with Agility Design.
+            </p>
+            <div class="container animate-fade-in">
+                <div class="grid grid-medium grid-align-center">
+                    <div class="col-4">
+                        <a href="https://github.com/madstk1/agility-design/wiki/Getting-Started">
+                            <button class="btn btn-push-red btn-large center">
+                                Getting Started
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://github.com/madstk1/agility-design">
+                            <button class="btn btn-push-red btn-large center">
+                                Contribute
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-medium grid-align-center" style="margin-top: 10rem;">
+                    <div class="col-4 info-fields">
+                        <div class="center display-table">
+                            <i class="center display-icon fas fa-bolt"></i>
+                            <p class="text-center text-extrathin">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, sem et feugiat molestie, justo erat aliquam dui, eu molestie quam nisi tincidunt tellus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 info-fields">
+                        <div class="center display-table">
+                            <i class="center display-icon fas fa-pen"></i>
+                            <p class="text-center text-extrathin">
+                                Nullam varius, arcu nec luctus egestas, purus velit bibendum lacus, vitae dignissim tortor magna sed mi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 info-fields">
+                        <div class="center display-table">
+                            <i class="center display-icon fas fa-cogs"></i>
+                            <p class="text-center text-extrathin">
+                                Sed lectus lacus, lobortis et nibh sed, maximus faucibus mauris. Sed eget lectus suscipit, laoreet arcu vel, facilisis magna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
