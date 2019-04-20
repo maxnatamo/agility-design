@@ -18,14 +18,14 @@
 */
 
 /* CSS Imports */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
 
 :root {
     /*
         Basics
      */
 
-    --main-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --main-font: 'Roboto', sans-serif;
     --default-text-color: black;
     --subtext-foreground: #3b3b3b;
 
@@ -48,18 +48,16 @@
 
     --default-page-background: white;
     
-    --panel-default-background: #f2f2f2;
-    --panel-default-border: #b3b3b3;
+    --panel-default-background: #f1e0ed;
+    --panel-default-border: #b3a8b1;
     --panel-header-foreground: #3e3e3e;
-    --panel-header-underline: gray;
     --panel-body-foreground: #535353;
 
     /*
         Code formatting
      */
 
-    --code-background-even: var(--panel-default-background);
-    --code-background-odd: #f0f0f0;
+    --code-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --code-border: #bcbcbc;
 
     /*
@@ -73,7 +71,7 @@
      */
 
    --unchecked-checkbox-background: #cacaca;
-   --checked-checkbox-background: #1da1f2;
+   --checked-checkbox-background: #e978a3;
 
     /*
          Colors
@@ -81,27 +79,27 @@
    --colors-white: #f6f6f6;
    --colors-black: #373b41;
    --colors-red: #ef978b;
-   --colors-green: #95d1a9;
-   --colors-yellow: #f7ca88;
+   --colors-green: #93da89;
+   --colors-yellow: #f7dd88;
    --colors-blue: #1da1f2;
-   --colors-magenta: #c9a0ca;
-   --colors-cyan: #71cecd;
+   --colors-magenta: #e197e2;
+   --colors-cyan: #76ebe9;
    
    --colors-bright-white: #fcfcfc;
-   --colors-bright-black: #cdd1d6;
+   --colors-bright-black: #4c4d53;
    --colors-bright-red: #f5aca3;
    --colors-bright-green: #b8e4c7;
    --colors-bright-yellow: #f8dcb2;
-   --colors-bright-blue: #9acdec;
-   --colors-bright-magenta: #e7cde7;
+   --colors-bright-blue: #97cef0;
+   --colors-bright-magenta: #ebb3eb;
    --colors-bright-cyan: #a3e9e8;
 
    --colors-dark-white: #747474;
    --colors-dark-black: #111316;
    --colors-dark-red: #b14f43;
    --colors-dark-green: #4c9665;
-   --colors-dark-yellow: #966e32;
-   --colors-dark-blue: #216fa0;
+   --colors-dark-yellow: #968f32;
+   --colors-dark-blue: #2167a0;
    --colors-dark-magenta: #79447a;
-   --colors-dark-cyan: #297271;
+   --colors-dark-cyan: #297260;
 }
