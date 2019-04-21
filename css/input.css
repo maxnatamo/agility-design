@@ -74,7 +74,9 @@ input[type="radio"]:checked ~ .switch-paddle .switch-knob {
 	Text Fields
  */
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
 	transition: border 0.15s;
 	border: 1px solid var(--colors-white);
 	border-radius: 3px;
@@ -82,66 +84,79 @@ input[type="text"] {
 	font-size: inherit;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
 	border: 1px solid var(--colors-blue);
 }
 
 /* Text field sizes */
 
-input[type="text"].small,
-.small input[type="text"] {
+input[type="text"].small,     .small input[type="text"],
+input[type="email"].small,     .small input[type="email"],
+input[type="password"].small, .small input[type="password"] {
 	font-size: 10px;
 }
 
-input[type="text"].medium,
-.medium input[type="text"] {
+input[type="text"].medium,     .medium input[type="text"],
+input[type="email"].medium,     .medium input[type="email"],
+input[type="password"].medium, .medium input[type="password"] {
 	font-size: 14px;
 }
 
-input[type="text"].large,
-.large input[type="text"] {
+input[type="text"].large, .large input[type="text"],
+input[type="email"].large, .large input[type="email"],
+input[type="password"].large, .large input[type="password"] {
 	font-size: 18px;
 }
 
 /* Text Field colors */
 
-input[type="text"].black:focus,
-.black input[type="text"]:focus {
+input[type="text"].black:focus, .black input[type="text"]:focus,
+input[type="email"].black:focus, .black input[type="email"]:focus,
+input[type="password"].black:focus, .black input[type="password"]:focus {
 	border: 1px solid var(--colors-black);
 }
 
-input[type="text"].white:focus,
-.white input[type="text"]:focus {
+input[type="text"].white:focus, .white input[type="text"]:focus,
+input[type="email"].white:focus, .white input[type="email"]:focus,
+input[type="password"].white:focus, .white input[type="password"]:focus {
 	border: 1px solid var(--colors-white);
 }
 
-input[type="text"].red:focus,
-.red input[type="text"]:focus {
+input[type="text"].red:focus, .red input[type="text"]:focus,
+input[type="email"].red:focus, .red input[type="email"]:focus,
+input[type="password"].red:focus, .red input[type="password"]:focus {
 	border: 1px solid var(--colors-red);
 }
 
-input[type="text"].green:focus,
-.green input[type="text"]:focus {
+input[type="text"].green:focus, .green input[type="text"]:focus,
+input[type="email"].green:focus, .green input[type="email"]:focus,
+input[type="password"].green:focus, .green input[type="password"]:focus {
 	border: 1px solid var(--colors-green);
 }
 
-input[type="text"].yellow:focus,
-.yellow input[type="text"]:focus {
+input[type="text"].yellow:focus, .yellow input[type="text"]:focus,
+input[type="email"].yellow:focus, .yellow input[type="email"]:focus,
+input[type="password"].yellow:focus, .yellow input[type="password"]:focus {
 	border: 1px solid var(--colors-yellow);
 }
 
-input[type="text"].blue:focus,
-.blue input[type="text"]:focus {
+input[type="text"].blue:focus, .blue input[type="text"]:focus,
+input[type="email"].blue:focus, .blue input[type="email"]:focus,
+input[type="password"].blue:focus, .blue input[type="password"]:focus {
 	border: 1px solid var(--colors-blue);
 }
 
-input[type="text"].magenta:focus,
-.magenta input[type="text"]:focus {
+input[type="text"].magenta:focus, .magenta input[type="text"]:focus,
+input[type="email"].magenta:focus, .magenta input[type="email"]:focus,
+input[type="password"].magenta:focus, .magenta input[type="password"]:focus {
 	border: 1px solid var(--colors-magenta);
 }
 
-input[type="text"].cyan:focus,
-.cyan input[type="text"]:focus {
+input[type="text"].cyan:focus, .cyan input[type="text"]:focus,
+input[type="email"].cyan:focus, .cyan input[type="email"]:focus,
+input[type="password"].cyan:focus, .cyan input[type="password"]:focus {
 	border: 1px solid var(--colors-cyan);
 }
 
@@ -183,7 +198,7 @@ input[type="text"].cyan:focus,
 	border-radius: 0px;
 }
 
-.input-group *:first-child {
+.input-group *:first-child:not(:last-child) {
 	border-radius: 3px 0px 0px 3px;
 }
 
