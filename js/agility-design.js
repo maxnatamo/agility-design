@@ -34,26 +34,6 @@ $(document).ready(function() {
         }
     });
 
-    // Tooltips
-    $("a[tooltip]").hover(function() {
-        const top = $(this).position().top + 20;
-        const left = $(this).position().left;
-        const id = Math.random().toString(36).substring(5);
-
-        $("body").append('<div class="tooltip tooltip-' + id + '" style="top: ' + top + 'px; left: ' + left + 'px"><strong>' + $(this).attr("message") + '</strong></div>');
-        $(this).attr("tooltip", "tooltip-" + id );
-        setTimeout(function() {
-            $("div.tooltip-" + id).css("opacity", 0.9);
-        }, 10);
-    }, function() {
-        const t = this;
-        $("div." + $(this).attr("tooltip")).css("opacity", 0);
-
-        setTimeout(function() {
-            $("div." + $(t).attr("tooltip")).remove();
-        }, parseFloat( $("div." + $(this).attr("tooltip")).css("transition-duration") ) * 1000);
-    });
-
     // Page Fades
     $("body.fade-on-leave").css("transition-duration", $("body.fade-on-leave").attr("fade-duration") + "s");
     $("body.fade-on-load").css({
