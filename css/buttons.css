@@ -139,6 +139,20 @@
     Buttons
  */
 
+/* Styles */
+
+.btn-small.btn-rounded {
+    border-radius: calc(12px + 0.35em);
+}
+
+.btn-medium.btn-rounded, .btn-rounded {
+    border-radius: calc(16px + 0.5em);
+}
+
+.btn-large.btn-rounded {
+    border-radius: calc(20px + 0.75em);
+}
+
 /* Default state */
 
 .btn-white {
