@@ -23,7 +23,7 @@
 
 .switch {
 	margin-bottom: 1em;
-	height: 1.5em;
+	height: 1.5rem;
 }
 
 .switch-input {
@@ -35,21 +35,21 @@
 .switch-paddle {
 	position: absolute;
 	width: 3rem;
-	height: 1.5em;
+	height: 1.5rem;
 
 	cursor: pointer;
-	padding: 0.125em;
-	border-radius: 0.75em;
+	padding: 0.125rem;
+	border-radius: 0.75rem;
 	transition: all 0.25s;
 }
 
 .switch-paddle .switch-knob {
 	position: absolute;
-	width: 1.2em;
-	height: 1.2em;
+	width: 1.2rem;
+	height: 1.2rem;
 
-	margin-top: 0.05em;
-	border-radius: 0.6em;
+	margin-top: 0.05rem;
+	border-radius: 0.6rem;
 	background-color: var(--colors-white);
 	background-size: cover;
 	transition: all 0.25s;
@@ -67,7 +67,7 @@ input[type="radio"]:checked ~ .switch-paddle {
 
 input[type="checkbox"]:checked ~ .switch-paddle .switch-knob,
 input[type="radio"]:checked ~ .switch-paddle .switch-knob {
-	margin-left: calc(3em - 1.2em - 0.125em - 0.125em);
+	margin-left: calc(3rem - 1.2rem - 0.125rem - 0.125rem);
 }
 
 /*
@@ -80,7 +80,7 @@ input[type="password"] {
 	transition: border 0.15s;
 	border: 1px solid var(--colors-white);
 	border-radius: 3px;
-	padding-left: 0.5em;
+	padding-left: 0.5rem;
 	font-size: inherit;
 	line-height: 2;
 }
@@ -96,25 +96,25 @@ input[type="password"]:focus {
 input[type="text"].small,     .small input[type="text"],
 input[type="email"].small,     .small input[type="email"],
 input[type="password"].small, .small input[type="password"] {
-	font-size: 10px;
+	font-size: 0.75rem;
 }
 
 input[type="text"].medium,     .medium input[type="text"],
 input[type="email"].medium,     .medium input[type="email"],
 input[type="password"].medium, .medium input[type="password"] {
-	font-size: 14px;
+	font-size: 1rem;
 }
 
 input[type="text"].large, .large input[type="text"],
 input[type="email"].large, .large input[type="email"],
 input[type="password"].large, .large input[type="password"] {
-	font-size: 18px;
+	font-size: 1.25rem;
 }
 
 input[type="text"].mega, .mega input[type="text"],
 input[type="email"].mega, .mega input[type="email"],
 input[type="password"].mega, .mega input[type="password"] {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 /* Text Field colors */
@@ -174,9 +174,9 @@ input[type="password"].cyan:focus, .cyan input[type="password"]:focus {
 .input-group {
 	width: 100%;
 	display: flex;
-	font-size: 14px;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .input-group .prefix,
@@ -194,7 +194,7 @@ input[type="password"].cyan:focus, .cyan input[type="password"]:focus {
 .input-group .prefix :not(.btn-group):not(.btn),
 .input-group .suffix :not(.btn-group):not(.btn) {
 	font-size: inherit;
-	padding: 0.375em 1em;
+	padding: 0.375rem 1rem;
 	vertical-align: middle;
 }
 
@@ -221,7 +221,7 @@ input[type="password"].cyan:focus, .cyan input[type="password"]:focus {
 	margin-left: 2px;
 }
 
-.input-group.small  { font-size: 12px; }
-.input-group.medium { font-size: 14px; }
-.input-group.large  { font-size: 18px; }
-.input-group.mega   { font-size: 24px; }
+.input-group.small  { font-size: 0.75rem; }
+.input-group.medium { font-size: 1.0rem; }
+.input-group.large  { font-size: 1.2rem; }
+.input-group.mega   { font-size: 1.5rem; }

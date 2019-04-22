@@ -20,6 +20,7 @@
 body {
 	font-family: var(--main-font);
 	color: var(--default-text-color);
+	font-size: calc((12px + 0.3vw));
 }
 
 p {
@@ -45,7 +46,7 @@ p:last-child {
 }
 
 .subtext {
-	font-size: 14px;
+	font-size: 1rem;
 	font-style: italic;
 	line-height: 1;
 	color: var(--subtext-foreground);
@@ -54,32 +55,32 @@ p:last-child {
 /* Headings, titles and displays */
 
 .title {
-	font-size: 42px;
-	margin-top: 0.25em;
-	margin-bottom: 0.25em;
+	font-size: 3rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 	color: var(--title-foreground);
 }
 
 .subtitle {
 	color: var(--subtitle-foreground);
 
-	font-size: 32px;
+	font-size: 2.5rem;
 	line-height: 1.4;
-	margin-top: 0.2em;
-	margin-bottom: 0.5em;
+	margin-top: 0.2rem;
+	margin-bottom: 0.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-top: 0.25em;
-	margin-bottom: 0.5em;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
 }
 
-h1 { font-size: 32px; color: var(--heading1-foreground); }
-h2 { font-size: 28px; color: var(--heading2-foreground); }
-h3 { font-size: 24px; color: var(--heading3-foreground); }
-h4 { font-size: 22px; color: var(--heading4-foreground); }
-h5 { font-size: 18px; color: var(--heading5-foreground); }
-h6 { font-size: 16px; color: var(--heading6-foreground); }
+h1 { font-size: 2.0rem; color: var(--heading1-foreground); }
+h2 { font-size: 1.8rem; color: var(--heading2-foreground); }
+h3 { font-size: 1.6rem; color: var(--heading3-foreground); }
+h4 { font-size: 1.4rem; color: var(--heading4-foreground); }
+h5 { font-size: 1.2rem; color: var(--heading5-foreground); }
+h6 { font-size: 1.0rem; color: var(--heading6-foreground); }
 
 div[class *= "grid-"] h1, div.panel h1,
 div[class *= "grid-"] h2, div.panel h2,
@@ -87,19 +88,8 @@ div[class *= "grid-"] h3, div.panel h3,
 div[class *= "grid-"] h4, div.panel h4,
 div[class *= "grid-"] h5, div.panel h5,
 div[class *= "grid-"] h6, div.panel h6 {
-	margin-top: 0.1em;
-	margin-bottom: 0.1em;
-}
-
-@media (min-width: 992px) {
-	.title { font-size: 48px; }
-	.subtitle { font-size: 38px; }
-	h1 { font-size: 48px; }
-	h2 { font-size: 40px; }
-	h3 { font-size: 31px; }
-	h4 { font-size: 25px; }
-	h5 { font-size: 20px; }
-	h6 { font-size: 16px; }
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
 }
 
 .display1, .display2, .display3, .display4, .display5, .display6 {
@@ -107,46 +97,37 @@ div[class *= "grid-"] h6, div.panel h6 {
 }
 
 .display1, .display2 {
-	margin-top: 1em;
-	margin-bottom: 0.5em;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .display3, .display4, .display5, .display6 {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .display1 {
-	font-size: 82px;
+	font-size: 5rem;
 }
 
 .display2 {
-	font-size: 58px;
+	font-size: 3.5rem;
 }
 
 .display3 {
-	font-size: 46px;
+	font-size: 3rem;
 }
 
 .display4 {
-	font-size: 38px;
+	font-size: 2.5rem;
 }
 
 .display5 {
-	font-size: 30px;
+	font-size: 2.0rem;
 }
 
 .display6 {
-	font-size: 24px;
-}
-
-@media (max-width: 991px) {
-	.display1 { font-size: 48px; }
-	.display2 { font-size: 42px; }
-	.display3 { font-size: 38px; }
-	.display4 { font-size: 28px; }
-	.display5 { font-size: 22px; }
-	.display6 { font-size: 18px; }
+	font-size: 1.5rem;
 }
 
 /* Regular text weight */
@@ -192,7 +173,7 @@ div[class *= "grid-"] h6, div.panel h6 {
 }
 
 .text-small {
-	font-size: 1rem;
+	font-size: 1.0rem;
 }
 
 .text-medium {

@@ -23,26 +23,26 @@
 
 .billboard {
 	width: 100%;
-	padding: 1em;
+	padding: 1rem;
 	background-color: var(--colors-white);
 	background-size: cover;
 }
 
 @media (min-width:576px) {
 	.billboard {
-		padding: 2em;
+		padding: 2rem;
 	}
 }
 
 @media (min-width:776px) {
 	.billboard {
-		padding: 3.5em;
+		padding: 3.5rem;
 	}
 }
 
 @media (min-width:992px) {
 	.billboard {
-		padding: 5em;
+		padding: 5rem;
 	}
 }
 

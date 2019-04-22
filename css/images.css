@@ -33,7 +33,7 @@ img {
 }
 
 .image-comment {
-	margin-top: 0.5em;
+	margin-top: 0.5rem;
 	text-align: center;
 	font-style: italic;
 	color: var(--image-comment-foreground);

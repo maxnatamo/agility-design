@@ -30,11 +30,11 @@
 
 .panel-header {
 	color: var(--panel-header-foreground);
-	padding-top: 0.5em;
+	padding-top: 0.5rem;
 }
 
 .panel-body {
-	margin: 1em 1em;
+	margin: 1rem 1rem;
 	color: var(--panel-body-foreground);
 }
 
@@ -65,7 +65,7 @@ ul.list-group {
 
 ul.list-group li.list-item {
 	list-style-type: none;
-	padding: 1em;
+	padding: 1rem;
 
 	color: var(--colors-black);
 	border: 1px solid var(--colors-bright-black);
@@ -278,7 +278,7 @@ div.menu-cyan a:hover {
 .callout {
 	width: 100%;
 	min-height: 1px;
-	padding: 1em;
+	padding: 1rem;
 	border-radius: 3px;
 	background-size: cover;
 	color: var(--colors-black);
@@ -328,8 +328,8 @@ div.menu-cyan a:hover {
  */
 
 table {
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	max-width: 100%;
 }
 
@@ -375,7 +375,7 @@ table td {
 
 table, th, td {
 	text-align: left;
-	padding: 0.6em;
+	padding: 0.6rem;
 	border-collapse: collapse;
 }
 

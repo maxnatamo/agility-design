@@ -29,7 +29,7 @@
 .tooltip p {
 	transition: opacity 0.25s;
 
-	min-width: 100px;
+	min-width: 6rem;
 	opacity: 0;
 	position: absolute;
 	padding: 0.25rem;
@@ -79,9 +79,9 @@
 	border: 1px solid var(--code-border);
 	border-radius: 3px;
 	
-	margin-bottom: 0em;
-	padding: 1.5em;
-	font-size: 0.8em;
+	margin-bottom: 0rem;
+	padding: 1.5rem;
+	font-size: 0.8rem;
 }
 
 /*
@@ -150,16 +150,14 @@
 
 .notification {
 	display: inline-block;
-	min-width: 2em;
+	min-width: 2rem;
 	border: 0px;
-	border-radius: 0.25em;
+	border-radius: 0.25rem;
 	font-weight: 600;
 	background-size: cover;
 	text-align: center;
 
-	height: 2em;
-	padding: 0.25em 0.5em;
-	line-height: calc(2em - 0.5em);
+	padding: 0.25rem 0.5rem;
 }
 
 li .notification {
@@ -169,41 +167,41 @@ li .notification {
 /* Notification styles */
 
 .notification.rounded {
-	border-radius: 1em;
+	border-radius: 1rem;
 }
 
 .notification-tiny.rounded {
-	border-radius: 1em;
+	border-radius: 1rem;
 }
 
 .notification-small.rounded {
-	border-radius: 2em;
+	border-radius: 2rem;
 }
 
 .notification-medium.rounded {
-	border-radius: 3em;
+	border-radius: 3rem;
 }
 
 .notification-large.rounded {
-	border-radius: 4em;
+	border-radius: 4rem;
 }
 
 /* Notification sizes */
 
 .notification-tiny {
-	font-size: 0.75em;
+	font-size: 0.75rem;
 }
 
 .notification-small {
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 .notification-medium {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 .notification-large {
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 /* Notification colors */
@@ -254,9 +252,9 @@ li .notification {
 .alert {
 	font-size: 1rem;
 	text-align: left;
-	padding: 1em 1.5em;
-	border-radius: 0.5em;
-	margin: 1em;
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+	margin: 1rem;
 
 	border: 1px solid var(--colors-dark-white);
 	background-color: var(--colors-white);

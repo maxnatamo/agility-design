@@ -21,8 +21,8 @@
     color: var(--colors-white);
     border: none;
     border-radius: 3px;
-    padding: 0.5em 2em;
-    font-size: 16px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -38,18 +38,18 @@
 }
 
 .btn-small {
-    font-size: 12px;
-    padding: 0.35em 1.5em;
+    font-size: 0.75rem;
+    padding: 0.35rem 1.5rem;
 }
 
 .btn-medium {
-	font-size: 16px;
-	padding: 0.5em 2em;
+	font-size: 1rem;
+	padding: 0.5rem 2rem;
 }
 
 .btn-large {
-    font-size: 20px;
-    padding: 0.75em 2.5em;
+    font-size: 1.25rem;
+    padding: 0.75rem 2.5rem;
 }
 
 .btn-full {
@@ -110,18 +110,18 @@
 }
 
 .btn-group-small .btn {
-    font-size: 12px;
-    padding: 0.75em 1.5em;
+    font-size: 0.75rem;
+    padding: 0.75rem 1.5rem;
 }
 
 .btn-group-medium .btn {
-    font-size: 16px;
-    padding: 0.5em 2em;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
 }
 
 .btn-group-large .btn {
-    font-size: 20px;
-    padding: 1.25em 2.5em;
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
 }
 
 .btn-group-auto {
@@ -142,15 +142,15 @@
 /* Styles */
 
 .btn-small.btn-rounded {
-    border-radius: calc(12px + 0.35em);
+    border-radius: calc(0.75rem + 0.35rem);
 }
 
 .btn-medium.btn-rounded, .btn-rounded {
-    border-radius: calc(16px + 0.5em);
+    border-radius: calc(1.0rem + 0.5rem);
 }
 
 .btn-large.btn-rounded {
-    border-radius: calc(20px + 0.75em);
+    border-radius: calc(1.25rem + 0.75rem);
 }
 
 /* Default state */
