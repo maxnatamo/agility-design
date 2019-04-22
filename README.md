@@ -10,20 +10,20 @@ Agility Design is a mobile-first HTML, CSS, and JavaScript framework to create t
 To start using Agility Design, simply link the `.css`-file to your `.html`-file.
 
 ```
-<link rel="stylesheet" href="https://raw.githubusercontent.com/madstk1/agility-design/master/css/simplicity-design.min.css">
+<link rel="stylesheet" href="https://madstk1.github.io/agility-design/css/agility-design.min.css">
 ```
   
 To add a skin, link the skin-in-questions's `.css`-file to your `.html`-file, as well. All the available skins can be found in the `css/skins/`-folder.
 
 ```
-<link rel="stylesheet" href="https://raw.githubusercontent.com/madstk1/agility-design/master/css/skins/default.css">
+<link rel="stylesheet" href="https://madstk1.github.io/agility-design/css/skins/default.css">
 ```
 
 For more advanced features, like animation-groups or closable alerts, the included JS file and a modern version of jQuery must be linked.
 
 ```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://raw.githubusercontent.com/madstk1/agility-design/master/js/agility-design.js"></script>
+<script src="https://madstk1.github.io/agility-design/js/agility-design.js"></script>
 ```
 
 ## Building
