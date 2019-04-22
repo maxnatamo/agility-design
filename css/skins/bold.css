@@ -144,7 +144,7 @@ p, span {
 
 h1, h2, h3, h4, h5, h6,
 .display1, .display2, .display3, .display4, .display5, .display6 {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6,
 
 .btn {
     text-transform: uppercase !important;
-    letter-spacing: 0.1em !important;
+    letter-spacing: 0.1rem !important;
 }
 
 .btn-white {
@@ -186,10 +186,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .switch-paddle {
-    transform: translateY(0.6em);
-    height: 0.25em;
-    padding-left: 0em;
-    padding-top: 0.125em;
+    transform: translateY(0.6rem);
+    height: 0.25rem;
+    padding-left: 0rem;
+    padding-top: 0.125rem;
 }
 
 .switch-paddle .switch-knob {
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6,
 
 input[type="checkbox"]:checked ~ .switch-paddle .switch-knob,
 input[type="radio"]:checked ~ .switch-paddle .switch-knob {
-	margin-left: calc(3em - 1.2em);
+	margin-left: calc(3rem - 1.2rem);
 }
 
 .input-group .prefix,
