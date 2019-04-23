@@ -75,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0.5rem;
 }
 
-h1 { font-size: 2.0rem; color: var(--heading1-foreground); }
-h2 { font-size: 1.8rem; color: var(--heading2-foreground); }
+h1 { font-size: 2.4rem; color: var(--heading1-foreground); }
+h2 { font-size: 2.0rem; color: var(--heading2-foreground); }
 h3 { font-size: 1.6rem; color: var(--heading3-foreground); }
 h4 { font-size: 1.4rem; color: var(--heading4-foreground); }
 h5 { font-size: 1.2rem; color: var(--heading5-foreground); }
