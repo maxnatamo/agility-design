@@ -1,6 +1,8 @@
-<p align="center"><img src="https://i.imgur.com/hmOiyaX.png" width="60%" align="center"></p>
 
-<p align="center">'BOLD'-example, made with Agility Design.<br>Source code can be found <a href="https://github.com/madstk1/agility-design/tree/master/made-with-agility/bold">here.</a></p>
+
+<p align="center"><img src="https://i.imgur.com/5l8z5nv.png" width="95%" align="center"></p>
+
+<p align="center">'BOLD' and 'Colorful', both of which are made with Agility Design.<br>Source code can be found <a href="https://github.com/madstk1/agility-design/tree/master/made-with-agility/">here.</a><br>To see the examples yourself, click <a href="https://madstk1.github.io/agility-design/">here.</a></p>
 
 # Agility Design
 Agility Design is a mobile-first HTML, CSS, and JavaScript framework to create themed websites. While it is influenced by Bootstrap 4 and Foundation, it also combines different aspects into a more uniform framework.
