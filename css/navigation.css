@@ -71,24 +71,6 @@ div.menu-fixed {
 	}
 }
 
-/* 
-	Navigation Arrows
- */
-
-.navigation-arrow {
-	position: fixed;
-	top: 0;
-	width: 2rem;
-	font-size: 1.7rem;
-	text-align: center;
-	line-height: 2rem;
-}
-
-.navigation-arrow.left         { left: 0; }
-.navigation-arrow.right        { right: 0; }
-.navigation-arrow.left::after  { content: "<"; }
-.navigation-arrow.right::after { content: ">"; }
-
 /*
 	Navbar
  */
@@ -100,6 +82,7 @@ div.menu-fixed {
 	top: 0;
 	left: 0;
 	color: var(--colors-black);
+	background-color: var(--colors-white);
 	z-index: 99;
 }
 
