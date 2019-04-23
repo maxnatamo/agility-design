@@ -26,7 +26,7 @@
 	display: inline;
 }
 
-.tooltip p {
+.tooltip .tooltip-text {
 	transition: opacity 0.25s;
 
 	min-width: 6rem;
@@ -42,28 +42,28 @@
 	vertical-align: middle;
 }
 
-.tooltip:hover p {
+.tooltip:hover .tooltip-text {
 	opacity: 1;
 }
 
 /* Positions */
 
-.tooltip.tooltip-bottom p {
+.tooltip.tooltip-bottom .tooltip-text {
 	top: 150%;
 	left: -50%;
 }
 
-.tooltip.tooltip-top p {
+.tooltip.tooltip-top .tooltip-text {
 	bottom: 150%;
 	left: 0%;
 }
 
-.tooltip.tooltip-right p {
+.tooltip.tooltip-right .tooltip-text {
 	left: 110%;
 	top: -50%;
 }
 
-.tooltip.tooltip-left p {
+.tooltip.tooltip-left .tooltip-text {
 	right: 110%;
 	top: -50%;
 }
