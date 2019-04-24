@@ -65,7 +65,7 @@ div.menu-fixed {
 	z-index: 99;
 }
 
-@media (min-width: 776px) {
+@media (min-width: 777px) {
 	div.menu:not(.menu-auto) a {
 		display: inline;
 	}
@@ -136,7 +136,7 @@ div.menu-fixed {
 
 /* Navbar sizes */
 
-@media (min-width: 536px) {
+@media (min-width: 577px) {
 	.navbar-small:not(.vertical) {
 		display: flex;
 	}
@@ -150,7 +150,7 @@ div.menu-fixed {
 	}
 }
 
-@media (min-width: 766px) {
+@media (min-width: 777px) {
 	.navbar-medium:not(.vertical) {
 		display: flex;
 	}
@@ -164,7 +164,7 @@ div.menu-fixed {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
 	.navbar-large:not(.vertical) {
 		display: flex;
 	}
@@ -178,7 +178,7 @@ div.menu-fixed {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
 	.navbar-mega:not(.vertical) {
 		display: flex;
 	}

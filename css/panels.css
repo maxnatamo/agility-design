@@ -349,7 +349,7 @@ table thead tr {
 	display: none;
 }
 
-@media (min-width: 766px) {
+@media (min-width: 777px) {
 	table tr,
 	table thead tr {
 		display: table-row;

@@ -79,7 +79,7 @@
     border-radius: 0px 0px 3px 3px;
 }
 
-@media (min-width: 766px) {
+@media (min-width: 777px) {
     .btn-group .btn {
         width: initial;
     }

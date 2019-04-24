@@ -83,7 +83,7 @@
  */
 
 /* Small cells */
-@media (min-width: 576px) {
+@media (min-width: 577px) {
 	.grid-small {
 		display: -webkit-flex; /* Safari */
 		display: flex;
@@ -145,7 +145,7 @@
 }
 
 /* Medium cells */
-@media (min-width:768px) {
+@media (min-width:777px) {
 	.grid-medium {
 		display: -webkit-flex; /* Safari */
 		display: flex;
@@ -207,7 +207,7 @@
 }
 
 /* Large cells */
-@media (min-width:992px) {
+@media (min-width:993px) {
 	.grid-large {
 		display: -webkit-flex; /* Safari */
 		display: flex;
@@ -269,7 +269,7 @@
 }
 
 /* Mega cells */
-@media (min-width:1200px) {
+@media (min-width:1201px) {
 	.grid-mega {
 		display: -webkit-flex; /* Safari */
 		display: flex;
@@ -331,7 +331,7 @@
 }
 
 /* Minimizing cells */
-@media (max-width:575px) {
+@media (max-width:576px) {
 	.grid-small div[class *= "col-"] {
 		width: 100%;
 		margin-top: 0.25rem;
@@ -343,7 +343,7 @@
 	}
 }
 
-@media (max-width:765px) {
+@media (max-width:776px) {
 	.grid-medium div[class *= "col-"] {
 		width: 100%;
 		margin-top: 0.25rem;
@@ -355,7 +355,7 @@
 	}
 }
 
-@media (max-width:991px) {
+@media (max-width:992px) {
 	.grid-large div[class *= "col-"] {
 		width: 100%;
 		margin-top: 0.25rem;
@@ -367,7 +367,7 @@
 	}
 }
 
-@media (max-width:1199px) {
+@media (max-width:1200px) {
 	.grid-mega div[class *= "col-"] {
 		width: 100%;
 		margin-top: 0.25rem;
