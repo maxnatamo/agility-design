@@ -68,6 +68,7 @@
 
 .communication-block-center {
 	display: flex;
+	display: -webkit-flex;
 	align-items: center;
 }
 
@@ -80,6 +81,7 @@
 @media (min-width:577px) {
 	.communication-content-small {
 		display: flex;
+		display: -webkit-flex;
 	}
 	
 	.communication-content-small .communication-block {
@@ -91,6 +93,7 @@
 @media (min-width:777px) {
 	.communication-content-medium {
 		display: flex;
+		display: -webkit-flex;
 	}
 
 	.communication-block-medium .communication-block {
@@ -102,6 +105,7 @@
 @media (min-width:993px) {
 	.communication-content-large {
 		display: flex;
+		display: -webkit-flex;
 	}
 
 	.communication-block-large .communication-block {

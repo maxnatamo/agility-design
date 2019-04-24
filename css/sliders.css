@@ -23,6 +23,7 @@
 
 .progress {
 	display: flex;
+	display: -webkit-flex;
 	display: -ms-flexbox; /* IE 10 */
 	height: 1rem;
 	overflow: hidden;
@@ -36,6 +37,7 @@
 
 .progress-bar {
 	display: flex;
+	display: -webkit-flex;
 	display: -ms-flexbox; /* IE 10 */
 	background-color: var(--colors-blue);
 	background-size: cover;
@@ -50,6 +52,7 @@
 	margin-bottom: 1rem;
 
 	display: flex;
+	display: -webkit-flex;
 	display: -ms-flexbox; /* IE 10 */
 }
 
